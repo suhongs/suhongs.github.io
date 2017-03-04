@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ubuntu on Suhong&#39;s Notes</title>
-    <link>http://suhongs.github.io/kr/tags/ubuntu/index.xml</link>
+    <link>https://suhongs.github.io/kr/tags/ubuntu/index.xml</link>
     <description>Recent content in Ubuntu on Suhong&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="http://suhongs.github.io/kr/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://suhongs.github.io/kr/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Ubuntu에 Scrapy 설치하기</title>
-      <link>http://suhongs.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
+      <link>https://suhongs.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
       <pubDate>Tue, 07 Feb 2017 10:00:12 +0900</pubDate>
       
-      <guid>http://suhongs.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://suhongs.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
       <description>
 
 &lt;p&gt;본 문서는 Scrapy 공식 문서의 &lt;a href=&#34;https://doc.scrapy.org/en/latest/intro/install.html&#34; target=&#34;_blank&#34;&gt;Installing Scrapy&lt;/a&gt;를 참고 했습니다.

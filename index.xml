@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Suhong&#39;s Notes</title>
-    <link>http://suhongs.github.io/index.xml</link>
+    <link>https://suhongs.github.io/index.xml</link>
     <description>Recent content on Suhong&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 18 Feb 2017 22:11:48 +0900</lastBuildDate>
-    <atom:link href="http://suhongs.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://suhongs.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Connect to Docker containers</title>
-      <link>http://suhongs.github.io/2017/02/connect-to-docker-containers/</link>
+      <link>https://suhongs.github.io/2017/02/connect-to-docker-containers/</link>
       <pubDate>Sat, 18 Feb 2017 22:11:48 +0900</pubDate>
       
-      <guid>http://suhongs.github.io/2017/02/connect-to-docker-containers/</guid>
+      <guid>https://suhongs.github.io/2017/02/connect-to-docker-containers/</guid>
       <description>&lt;p&gt;While using docker, we ocasionally have to connect to another Docker container such as mysql. In this case, we have to use Docker &lt;code&gt;--network&lt;/code&gt; flag.&lt;/p&gt;
 
 &lt;p&gt;Although Docker provided &lt;code&gt;--link&lt;/code&gt; flag before 1.9.0 version, this flag is a deprecated legacy feature according to &lt;a href=&#34;https://docs.docker.com/engine/userguide/networking/default_network/dockerlinks/&#34; target=&#34;_blank&#34;&gt;Legacy container links&lt;/a&gt;.&lt;/p&gt;
