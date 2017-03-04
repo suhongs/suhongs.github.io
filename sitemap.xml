@@ -2,12 +2,16 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
 	<sitemap>
-	   	<loc>http://example.org/kr/sitemap.xml</loc>
+	   	<loc>http://suhongs.github.io/en/sitemap.xml</loc>
+		
+	   	<lastmod>2017-02-18T22:11:48+09:00</lastmod>
 		
 	</sitemap>
 	
 	<sitemap>
-	   	<loc>http://example.org/en/sitemap.xml</loc>
+	   	<loc>http://suhongs.github.io/kr/sitemap.xml</loc>
+		
+	   	<lastmod>2017-02-07T10:00:12+09:00</lastmod>
 		
 	</sitemap>
 	

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>구글 클라우드에서 Docker 빌드하기</title>
+  
+  <meta name="author" content=""/>
+  <meta name="generator" content="Hugo 0.18.1" />
+  
+
+  <link rel="alternate" href="http://suhongs.github.io/index.xml" type="application/rss+xml" title="Suhong&#39;s Notes">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://suhongs.github.io//css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://suhongs.github.io//css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="http://suhongs.github.io//css/pygment_highlights.css" />
+  <link rel="stylesheet" href="http://suhongs.github.io/css/highlight.min.css">
+  
+  
+  <meta property="og:title" content="구글 클라우드에서 Docker 빌드하기" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/kr/2017/02/%EA%B5%AC%EA%B8%80-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%97%90%EC%84%9C-docker-%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0/" />
+  <meta property="og:image" content="/" />
+  
+</head>
+
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://suhongs.github.io/">Suhong&#39;s Notes</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+          <a title="KR" href="/kr/">KR</a>
+  	      </li>
+  	    
+      
+        
+          <li>
+          <a title="En" href="/">En</a>
+  	      </li>
+  	    
+      
+      </ul>
+    </div>
+
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+      
+	  </div>
+	</div>
+
+  </div>
+</nav>
+
+
+    <div role="main" class="container main-content">
+
+      
+
+
+
+  
+
+  <header class="header-section ">
+  
+  <div class="intro-header no-img">
+      <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <h1>구글 클라우드에서 Docker 빌드하기</h1>
+      
+      
+      
+      <span class="post-meta">Posted on February 6, 2017</span>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </header>
+
+	  
+      
+        <div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+          
+
+<h2 id="docker-설치하기">Docker 설치하기</h2>
+
+<p>구글클라우드 Compute Engine에서 Ubuntu 16.04 LTS 인스턴스 런치 후 SSH로 접속 후 아래의 명령어로 도커를 설치한다.</p>
+
+<pre><code>$ sudo apt-get update
+$ sudo apt-get install docker.io
+</code></pre>
+
+<h2 id="dockerfile-빌드하기">Dockerfile 빌드하기</h2>
+
+<p>원하는 시스템 설정의 Dockerfile을 작성하거나 다운 받는다. 본 예제의 경우 Newsmine 프로젝트의 <a href="https://raw.githubusercontent.com/suhongs/newsmine/master/Dockerfile" target="_blank">Dockerfile</a>을 Git 허브로 부터 직접 다운 받는다. Dockerfile이 존재하는 디렉토리에서 아래의 명령을 실행하면 Docker 빌드가 시작된다.</p>
+
+<pre><code>$ sudo docker build --tag newsmine:latest .
+</code></pre>
+
+<p>Build 명령을 실행하면 Dockerfile에서 요구하는 패키지들을 다운받고 필요한 설치 명령이 수행된다.</p>
+
+<h2 id="docker-실행하기">Docker 실행하기</h2>
+
+<p>Build 명령이 완료되면 Docker의 run 명령어를 활용하여 실행한다. Docker를 실행하는 방법에는 데몬 방식도 있지만, 데몬 방식으로 실행하면 초기 단계에서는 버그나 설정 변경이 어려우므로 초기에는 아래와 같이 실행하는 것이 편리하다.</p>
+
+<pre><code>$ sudo docker run -p 8081:8888 --name newslab -v '/home/${USER}/newsmine/src:/home/jovyan/work' newsmine:latest
+</code></pre>
+
+<p>위 명령에서 Docker의 내부 8888(Jupyter 기본 포트)를 외부 8081에 매핑했다. 구글 클라우드 설정에서 방화벽 접근 설정은 <a href="http://stackoverflow.com/questions/21065922/how-to-open-a-specific-port-such-as-9090-in-google-compute-engine" target="_blank">링크</a>를 통해서 확인. Docker가 정상적으로 실행되면 아래와 같이 메세지가 표시된다.</p>
+
+<pre><code>[I 03:06:25.088 NotebookApp] Writing notebook server cookie secret to /home/jovyan/.local/share/jupyter/runtime/not
+ebook_cookie_secret
+[W 03:06:25.169 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption
+. This is not recommended.
+[I 03:06:25.227 NotebookApp] Serving notebooks from local directory: /home/jovyan/work
+[I 03:06:25.228 NotebookApp] 0 active kernels 
+[I 03:06:25.228 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/?tok
+en=d992448fc79acd0c938cecdc3282ca146cc2d4d4afc16320
+[I 03:06:25.229 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmatio
+n).
+[C 03:06:25.230 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=d992448fc79acd0c938cecdc3282ca146cc2d4d4afc16320
+</code></pre>
+
+<p>최초 접근시에는 위에 표시된 토큰을 입력해야 한다.</p>
+
+<h3 id="폴더-쓰기-권한-설정">폴더 쓰기 권한 설정</h3>
+
+<p>Docker 실행시 호스트 볼륨 동기화를 선언 해주면 Jupyter에서 파일을 저장할 수 없는 경우가 생긴다. 이 경우에 호스트의 공유된 폴더에 대해 그룹 권한을 변경해주면 쓰기가 가능해진다.</p>
+
+<pre><code>$ chgrp 100 src
+$ chmod g+w src
+</code></pre>
+
+<p>해당 사항에 대한 상세한 설명은 Jupyter의 <a href="https://github.com/jupyter/docker-stacks/issues/114" target="_blank">github 이슈</a>에서 찾을 수 있다.</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+        
+        <li class="next">
+          <a href="http://suhongs.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/" data-toggle="tooltip" data-placement="top" title="Ubuntu에 Scrapy 설치하기">Next Post &rarr;</a>
+        </li>
+        
+      </ul>
+
+      
+      <div class="disqus-comments">
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'suhongs-kr';
+    var disqus_identifier = 'http:\/\/suhongs.github.io\/kr\/2017\/02\/%EA%B5%AC%EA%B8%80-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%97%90%EC%84%9C-docker-%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0\/';
+    var disqus_title = '구글 클라우드에서 Docker 빌드하기';
+    var disqus_url = 'http:\/\/suhongs.github.io\/kr\/2017\/02\/%EA%B5%AC%EA%B8%80-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%97%90%EC%84%9C-docker-%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+      
+
+    </div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+		      
+		      
+		      
+	    	  
+          
+          
+
+    		  <li>
+      			<a href="http://suhongs.github.io/index.xml" title="RSS">
+      			  <span class="fa-stack fa-lg">
+        				<i class="fa fa-circle fa-stack-2x"></i>
+        				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+      			  </span>
+      			</a>
+    		  </li>		
+
+        </ul>
+        <p class="credits copyright text-muted">
+    	  
+    	  &nbsp;&bull;&nbsp;
+    	  2017
+    		  
+    	  
+    	  &nbsp;&bull;&nbsp;
+    	  <a href="http://suhongs.github.io/">Suhong&#39;s Notes</a>
+    	  
+  	    </p>
+  	    
+    	<p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.18.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a> adapted to <a href="https://github.com/1138-4EB/beautifulhugo">Beautiful Hugo</a>
+          
+    	</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="http://suhongs.github.io//js/jquery-1.11.2.min.js"></script>
+<script src="http://suhongs.github.io//js/bootstrap.min.js"></script>
+<script src="http://suhongs.github.io//js/main.js"></script>
+<script src="http://suhongs.github.io/js/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+  </body>
+</html>

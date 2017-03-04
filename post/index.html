@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Posts</title>
+  
+  <meta name="author" content=""/>
+  <meta name="generator" content="Hugo 0.18.1" />
+  
+
+  <link rel="alternate" href="http://suhongs.github.io/index.xml" type="application/rss+xml" title="Suhong&#39;s Notes">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://suhongs.github.io//css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://suhongs.github.io//css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="http://suhongs.github.io//css/pygment_highlights.css" />
+  <link rel="stylesheet" href="http://suhongs.github.io/css/highlight.min.css">
+  
+  
+  <meta property="og:title" content="Posts" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/post/" />
+  <meta property="og:image" content="/" />
+  
+</head>
+
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://suhongs.github.io/">Suhong&#39;s Notes</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+          <a title="KR" href="/kr/">KR</a>
+  	      </li>
+  	    
+      
+        
+          <li>
+          <a title="En" href="/">En</a>
+  	      </li>
+  	    
+      
+      </ul>
+    </div>
+
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+      
+	  </div>
+	</div>
+
+  </div>
+</nav>
+
+
+    <header class="header-section ">
+      <div class="intro-header no-img">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="page-heading">
+                <h1>Posts</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="posts-list">
+            
+            
+            <article class="post-preview">
+              <a href="http://suhongs.github.io/2017/02/connect-to-docker-containers/">
+              <h2 class="post-title">Connect to Docker containers</h2>
+            
+                
+              </a>
+              
+              <p class="post-meta">
+                Posted on February 18, 2017
+              </p>
+            
+              <div class="post-entry">
+                While using docker, we ocasionally have to connect to another Docker container such as mysql. In this case, we have to use Docker --network flag.
+Although Docker provided --link flag before 1.9.0 version, this flag is a deprecated legacy feature according to Legacy container links.
+This document shows how to declare Docker network using --network flag.
+$ docker network create tikahost $ docker run -d -p 9998:9998 --name tika --network tikahost logicalspark/docker-tikaserver $ docker run --name daumlab -p 8888:8888 -v '/home/vagrant/Project/daum/scrapy:/home/jovyan/work' -d --network tikahost newsmine:latest  After declaring Docker network, containers can be connected using their Docker name.
+              <a href="http://suhongs.github.io/2017/02/connect-to-docker-containers/" class="post-read-more">[Read&nbsp;More]</a>
+              </div>
+            
+             </article>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+		      
+		      
+		      
+	    	  
+          
+          
+
+    		  <li>
+      			<a href="http://suhongs.github.io/index.xml" title="RSS">
+      			  <span class="fa-stack fa-lg">
+        				<i class="fa fa-circle fa-stack-2x"></i>
+        				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+      			  </span>
+      			</a>
+    		  </li>		
+
+        </ul>
+        <p class="credits copyright text-muted">
+    	  
+    	  &nbsp;&bull;&nbsp;
+    	  2017
+    		  
+    	  
+    	  &nbsp;&bull;&nbsp;
+    	  <a href="http://suhongs.github.io/">Suhong&#39;s Notes</a>
+    	  
+  	    </p>
+  	    
+    	<p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.18.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a> adapted to <a href="https://github.com/1138-4EB/beautifulhugo">Beautiful Hugo</a>
+          
+    	</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="http://suhongs.github.io//js/jquery-1.11.2.min.js"></script>
+<script src="http://suhongs.github.io//js/bootstrap.min.js"></script>
+<script src="http://suhongs.github.io//js/main.js"></script>
+<script src="http://suhongs.github.io/js/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Docker Builds</title>
+  
+  <meta name="author" content=""/>
+  <meta name="generator" content="Hugo 0.18.1" />
+  
+
+  <link rel="alternate" href="http://suhongs.github.io/index.xml" type="application/rss+xml" title="Suhong&#39;s Notes">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://suhongs.github.io//css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://suhongs.github.io//css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="http://suhongs.github.io//css/pygment_highlights.css" />
+  <link rel="stylesheet" href="http://suhongs.github.io/css/highlight.min.css">
+  
+  
+  <meta property="og:title" content="Docker Builds" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/kr/series/docker-builds/" />
+  <meta property="og:image" content="/" />
+  
+</head>
+
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://suhongs.github.io/">Suhong&#39;s Notes</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+          <a title="KR" href="/kr/">KR</a>
+  	      </li>
+  	    
+      
+        
+          <li>
+          <a title="En" href="/">En</a>
+  	      </li>
+  	    
+      
+      </ul>
+    </div>
+
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+      
+	  </div>
+	</div>
+
+  </div>
+</nav>
+
+
+    <header class="header-section ">
+      <div class="intro-header no-img">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="page-heading">
+                <h1>Docker Builds</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="posts-list">
+            
+            
+            <article class="post-preview">
+              <a href="http://suhongs.github.io/kr/2017/02/%EA%B5%AC%EA%B8%80-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%97%90%EC%84%9C-docker-%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0/">
+              <h2 class="post-title">구글 클라우드에서 Docker 빌드하기</h2>
+            
+                
+              </a>
+              
+              <p class="post-meta">
+                Posted on February 6, 2017
+              </p>
+            
+              <div class="post-entry">
+                Docker 설치하기 구글클라우드 Compute Engine에서 Ubuntu 16.04 LTS 인스턴스 런치 후 SSH로 접속 후 아래의 명령어로 도커를 설치한다.
+$ sudo apt-get update $ sudo apt-get install docker.io  Dockerfile 빌드하기 원하는 시스템 설정의 Dockerfile을 작성하거나 다운 받는다. 본 예제의 경우 Newsmine 프로젝트의 Dockerfile을 Git 허브로 부터 직접 다운 받는다. Dockerfile이 존재하는 디렉토리에서 아래의 명령을 실행하면 Docker 빌드가 시작된다.
+$ sudo docker build --tag newsmine:latest .  Build 명령을 실행하면 Dockerfile에서 요구하는 패키지들을 다운받고 필요한 설치 명령이 수행된다.
+              <a href="http://suhongs.github.io/kr/2017/02/%EA%B5%AC%EA%B8%80-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%97%90%EC%84%9C-docker-%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0/" class="post-read-more">[Read&nbsp;More]</a>
+              </div>
+            
+             </article>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+		      
+		      
+		      
+	    	  
+          
+          
+
+    		  <li>
+      			<a href="http://suhongs.github.io/index.xml" title="RSS">
+      			  <span class="fa-stack fa-lg">
+        				<i class="fa fa-circle fa-stack-2x"></i>
+        				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+      			  </span>
+      			</a>
+    		  </li>		
+
+        </ul>
+        <p class="credits copyright text-muted">
+    	  
+    	  &nbsp;&bull;&nbsp;
+    	  2017
+    		  
+    	  
+    	  &nbsp;&bull;&nbsp;
+    	  <a href="http://suhongs.github.io/">Suhong&#39;s Notes</a>
+    	  
+  	    </p>
+  	    
+    	<p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.18.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a> adapted to <a href="https://github.com/1138-4EB/beautifulhugo">Beautiful Hugo</a>
+          
+    	</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="http://suhongs.github.io//js/jquery-1.11.2.min.js"></script>
+<script src="http://suhongs.github.io//js/bootstrap.min.js"></script>
+<script src="http://suhongs.github.io//js/main.js"></script>
+<script src="http://suhongs.github.io/js/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+  </body>
+</html>

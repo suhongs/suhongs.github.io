@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Ubuntu에 Scrapy 설치하기</title>
+  
+  <meta name="author" content=""/>
+  <meta name="generator" content="Hugo 0.18.1" />
+  
+
+  <link rel="alternate" href="http://suhongs.github.io/index.xml" type="application/rss+xml" title="Suhong&#39;s Notes">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://suhongs.github.io//css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://suhongs.github.io//css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="http://suhongs.github.io//css/pygment_highlights.css" />
+  <link rel="stylesheet" href="http://suhongs.github.io/css/highlight.min.css">
+  
+  
+  <meta property="og:title" content="Ubuntu에 Scrapy 설치하기" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/" />
+  <meta property="og:image" content="/" />
+  
+</head>
+
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://suhongs.github.io/">Suhong&#39;s Notes</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li>
+          <a title="KR" href="/kr/">KR</a>
+  	      </li>
+  	    
+      
+        
+          <li>
+          <a title="En" href="/">En</a>
+  	      </li>
+  	    
+      
+      </ul>
+    </div>
+
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+      
+	  </div>
+	</div>
+
+  </div>
+</nav>
+
+
+    <div role="main" class="container main-content">
+
+      
+
+
+
+  
+
+  <header class="header-section ">
+  
+  <div class="intro-header no-img">
+      <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <h1>Ubuntu에 Scrapy 설치하기</h1>
+      
+      
+      
+      <span class="post-meta">Posted on February 7, 2017</span>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </header>
+
+	  
+      
+        <div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+          
+
+<p>본 문서는 Scrapy 공식 문서의 <a href="https://doc.scrapy.org/en/latest/intro/install.html" target="_blank">Installing Scrapy</a>를 참고 했습니다.
+해당 문서에 따르면 Scrapy는 Ubuntu 12.04 이상을 지원하고 있습니다. 또한 Ubuntu에서 자체 지원하는 <code>python-scrapy</code>는 Scrapy의 최신 버전과는 성능등의 측면에서 사용하지 말것을 권고하고 있습니다. 아래의 작업은 Ubuntu 16.04.1 LTS 에서 실행 됐습니다.</p>
+
+<h2 id="관련-패키지-설치">관련 패키지 설치</h2>
+
+<p>Scrapy를 설치하기 전에 실행하기 위해 필요한 연관 패키지들을 아래의 명령으로 설치합니다.</p>
+
+<pre><code>sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev
+</code></pre>
+
+<p>Scrapy를 Python3로 활용하고 싶을 경우에는 아래의 명령으로 필요한 패키지를 먼저 설치합니다.</p>
+
+<pre><code>sudo apt-get install python3 python3-dev
+</code></pre>
+
+<h2 id="scrapy-설치">Scrapy 설치</h2>
+
+<p><a href="https://doc.scrapy.org/en/latest/intro/install.html" target="_blank">Installing Scrapy</a> 문서에서는 Scrapy를 Virtualenv에서 설치 활용할 것을 권장하고 있습니다. Virtualenv에 대한 상세한 활용 방법은 <a href="https://virtualenv.pypa.io/en/stable/userguide/" target="_blank">사용자 가이드</a>에 자세한 설명이 있습니다.</p>
+
+<pre><code>sudo pip install virtualenv
+</code></pre>
+
+<p>설치가 완료되면 Virtualenv를 이용할 환경을 정의해주고 해당 폴더로 이동합니다. 아래 명령어를 기준으로 <code>-p python3</code>는 실행환경을 Python3로 정의하고 폴더는 <code>scrapy</code>로 지정됩니다.</p>
+
+<pre><code>virtualenv -p python3 scrapy
+</code></pre>
+
+<p>scrapy 폴더로 이동해서 <code>source bin/activate</code> 명령어를 수행하면 Virtualenv 실행이 준비되고 Scrapy 설치를 위한 모든 준비 과정이 마무리 됩니다.</p>
+
+<pre><code>pip install scrapy
+</code></pre>
+
+<p>이제 Scrapy 실행을 위한 모든 준비가 끝났습니다.</p>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+        <li class="previous">
+          <a href="http://suhongs.github.io/kr/2017/02/%EA%B5%AC%EA%B8%80-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%97%90%EC%84%9C-docker-%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0/" data-toggle="tooltip" data-placement="top" title="구글 클라우드에서 Docker 빌드하기">&larr; Previous Post</a>
+        </li>
+        
+        
+      </ul>
+
+      
+      <div class="disqus-comments">
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'suhongs-kr';
+    var disqus_identifier = 'http:\/\/suhongs.github.io\/kr\/2017\/02\/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0\/';
+    var disqus_title = 'Ubuntu에 Scrapy 설치하기';
+    var disqus_url = 'http:\/\/suhongs.github.io\/kr\/2017\/02\/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+      
+
+    </div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+		      
+		      
+		      
+	    	  
+          
+          
+
+    		  <li>
+      			<a href="http://suhongs.github.io/index.xml" title="RSS">
+      			  <span class="fa-stack fa-lg">
+        				<i class="fa fa-circle fa-stack-2x"></i>
+        				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+      			  </span>
+      			</a>
+    		  </li>		
+
+        </ul>
+        <p class="credits copyright text-muted">
+    	  
+    	  &nbsp;&bull;&nbsp;
+    	  2017
+    		  
+    	  
+    	  &nbsp;&bull;&nbsp;
+    	  <a href="http://suhongs.github.io/">Suhong&#39;s Notes</a>
+    	  
+  	    </p>
+  	    
+    	<p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.18.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a> adapted to <a href="https://github.com/1138-4EB/beautifulhugo">Beautiful Hugo</a>
+          
+    	</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="http://suhongs.github.io//js/jquery-1.11.2.min.js"></script>
+<script src="http://suhongs.github.io//js/bootstrap.min.js"></script>
+<script src="http://suhongs.github.io//js/main.js"></script>
+<script src="http://suhongs.github.io/js/highlight.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+  </body>
+</html>
