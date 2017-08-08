@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://suhongs.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</loc>
@@ -14,17 +15,27 @@
   <url>
     <loc>https://suhongs.github.io/kr/categories/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://suhongs.github.io/kr/categories/development/</loc>
-    <lastmod>2017-02-07T10:00:12+09:00</lastmod>
-    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://suhongs.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://suhongs.github.io/kr/categories/"
+                />
   </url>
   
   <url>
     <loc>https://suhongs.github.io/kr/tags/development/</loc>
     <lastmod>2017-02-06T11:39:27+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://suhongs.github.io/kr/categories/development/</loc>
+    <lastmod>2017-02-07T10:00:12+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -50,6 +61,16 @@
     <loc>https://suhongs.github.io/kr/post/</loc>
     <lastmod>2017-02-07T10:00:12+09:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://suhongs.github.io/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://suhongs.github.io/kr/post/"
+                />
   </url>
   
   <url>
@@ -66,18 +87,50 @@
   
   <url>
     <loc>https://suhongs.github.io/kr/series/</loc>
+    <lastmod>2017-02-06T11:39:27+09:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://suhongs.github.io/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://suhongs.github.io/kr/series/"
+                />
   </url>
   
   <url>
     <loc>https://suhongs.github.io/kr/</loc>
     <lastmod>2017-02-07T10:00:12+09:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://suhongs.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://suhongs.github.io/kr/"
+                />
   </url>
   
   <url>
     <loc>https://suhongs.github.io/kr/tags/</loc>
+    <lastmod>2017-02-06T11:39:27+09:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://suhongs.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://suhongs.github.io/kr/tags/"
+                />
   </url>
   
   <url>

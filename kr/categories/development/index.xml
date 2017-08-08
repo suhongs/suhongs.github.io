@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on Suhong&#39;s Notes</title>
-    <link>https://suhongs.github.io/kr/categories/development/index.xml</link>
+    <link>https://suhongs.github.io/kr/categories/development/</link>
     <description>Recent content in Development on Suhong&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="https://suhongs.github.io/kr/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Feb 2017 10:00:12 +0900</lastBuildDate>
+    
+	<atom:link href="https://suhongs.github.io/kr/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Ubuntu에 Scrapy 설치하기</title>
@@ -14,42 +17,9 @@
       <pubDate>Tue, 07 Feb 2017 10:00:12 +0900</pubDate>
       
       <guid>https://suhongs.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
-      <description>
-
-&lt;p&gt;본 문서는 Scrapy 공식 문서의 &lt;a href=&#34;https://doc.scrapy.org/en/latest/intro/install.html&#34; target=&#34;_blank&#34;&gt;Installing Scrapy&lt;/a&gt;를 참고 했습니다.
-해당 문서에 따르면 Scrapy는 Ubuntu 12.04 이상을 지원하고 있습니다. 또한 Ubuntu에서 자체 지원하는 &lt;code&gt;python-scrapy&lt;/code&gt;는 Scrapy의 최신 버전과는 성능등의 측면에서 사용하지 말것을 권고하고 있습니다. 아래의 작업은 Ubuntu 16.04.1 LTS 에서 실행 됐습니다.&lt;/p&gt;
-
-&lt;h2 id=&#34;관련-패키지-설치&#34;&gt;관련 패키지 설치&lt;/h2&gt;
-
-&lt;p&gt;Scrapy를 설치하기 전에 실행하기 위해 필요한 연관 패키지들을 아래의 명령으로 설치합니다.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Scrapy를 Python3로 활용하고 싶을 경우에는 아래의 명령으로 필요한 패키지를 먼저 설치합니다.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo apt-get install python3 python3-dev
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;scrapy-설치&#34;&gt;Scrapy 설치&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://doc.scrapy.org/en/latest/intro/install.html&#34; target=&#34;_blank&#34;&gt;Installing Scrapy&lt;/a&gt; 문서에서는 Scrapy를 Virtualenv에서 설치 활용할 것을 권장하고 있습니다. Virtualenv에 대한 상세한 활용 방법은 &lt;a href=&#34;https://virtualenv.pypa.io/en/stable/userguide/&#34; target=&#34;_blank&#34;&gt;사용자 가이드&lt;/a&gt;에 자세한 설명이 있습니다.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo pip install virtualenv
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;설치가 완료되면 Virtualenv를 이용할 환경을 정의해주고 해당 폴더로 이동합니다. 아래 명령어를 기준으로 &lt;code&gt;-p python3&lt;/code&gt;는 실행환경을 Python3로 정의하고 폴더는 &lt;code&gt;scrapy&lt;/code&gt;로 지정됩니다.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;virtualenv -p python3 scrapy
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;scrapy 폴더로 이동해서 &lt;code&gt;source bin/activate&lt;/code&gt; 명령어를 수행하면 Virtualenv 실행이 준비되고 Scrapy 설치를 위한 모든 준비 과정이 마무리 됩니다.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;pip install scrapy
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;이제 Scrapy 실행을 위한 모든 준비가 끝났습니다.&lt;/p&gt;
-</description>
+      <description>본 문서는 Scrapy 공식 문서의 Installing Scrapy를 참고 했습니다. 해당 문서에 따르면 Scrapy는 Ubuntu 12.04 이상을 지원하고 있습니다. 또한 Ubuntu에서 자체 지원하는 python-scrapy는 Scrapy의 최신 버전과는 성능등의 측면에서 사용하지 말것을 권고하고 있습니다. 아래의 작업은 Ubuntu 16.04.1 LTS 에서 실행 됐습니다.
+관련 패키지 설치 Scrapy를 설치하기 전에 실행하기 위해 필요한 연관 패키지들을 아래의 명령으로 설치합니다.
+sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev  Scrapy를 Python3로 활용하고 싶을 경우에는 아래의 명령으로 필요한 패키지를 먼저 설치합니다.</description>
     </item>
     
     <item>
@@ -58,63 +28,9 @@
       <pubDate>Mon, 06 Feb 2017 11:39:27 +0900</pubDate>
       
       <guid>https://suhongs.github.io/kr/2017/02/%EA%B5%AC%EA%B8%80-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%97%90%EC%84%9C-docker-%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0/</guid>
-      <description>
-
-&lt;h2 id=&#34;docker-설치하기&#34;&gt;Docker 설치하기&lt;/h2&gt;
-
-&lt;p&gt;구글클라우드 Compute Engine에서 Ubuntu 16.04 LTS 인스턴스 런치 후 SSH로 접속 후 아래의 명령어로 도커를 설치한다.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ sudo apt-get update
-$ sudo apt-get install docker.io
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;dockerfile-빌드하기&#34;&gt;Dockerfile 빌드하기&lt;/h2&gt;
-
-&lt;p&gt;원하는 시스템 설정의 Dockerfile을 작성하거나 다운 받는다. 본 예제의 경우 Newsmine 프로젝트의 &lt;a href=&#34;https://raw.githubusercontent.com/suhongs/newsmine/master/Dockerfile&#34; target=&#34;_blank&#34;&gt;Dockerfile&lt;/a&gt;을 Git 허브로 부터 직접 다운 받는다. Dockerfile이 존재하는 디렉토리에서 아래의 명령을 실행하면 Docker 빌드가 시작된다.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ sudo docker build --tag newsmine:latest .
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Build 명령을 실행하면 Dockerfile에서 요구하는 패키지들을 다운받고 필요한 설치 명령이 수행된다.&lt;/p&gt;
-
-&lt;h2 id=&#34;docker-실행하기&#34;&gt;Docker 실행하기&lt;/h2&gt;
-
-&lt;p&gt;Build 명령이 완료되면 Docker의 run 명령어를 활용하여 실행한다. Docker를 실행하는 방법에는 데몬 방식도 있지만, 데몬 방식으로 실행하면 초기 단계에서는 버그나 설정 변경이 어려우므로 초기에는 아래와 같이 실행하는 것이 편리하다.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ sudo docker run -p 8081:8888 --name newslab -v &#39;/home/${USER}/newsmine/src:/home/jovyan/work&#39; newsmine:latest
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;위 명령에서 Docker의 내부 8888(Jupyter 기본 포트)를 외부 8081에 매핑했다. 구글 클라우드 설정에서 방화벽 접근 설정은 &lt;a href=&#34;http://stackoverflow.com/questions/21065922/how-to-open-a-specific-port-such-as-9090-in-google-compute-engine&#34; target=&#34;_blank&#34;&gt;링크&lt;/a&gt;를 통해서 확인. Docker가 정상적으로 실행되면 아래와 같이 메세지가 표시된다.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[I 03:06:25.088 NotebookApp] Writing notebook server cookie secret to /home/jovyan/.local/share/jupyter/runtime/not
-ebook_cookie_secret
-[W 03:06:25.169 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption
-. This is not recommended.
-[I 03:06:25.227 NotebookApp] Serving notebooks from local directory: /home/jovyan/work
-[I 03:06:25.228 NotebookApp] 0 active kernels 
-[I 03:06:25.228 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:8888/?tok
-en=d992448fc79acd0c938cecdc3282ca146cc2d4d4afc16320
-[I 03:06:25.229 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmatio
-n).
-[C 03:06:25.230 NotebookApp] 
-    
-    Copy/paste this URL into your browser when you connect for the first time,
-    to login with a token:
-        http://localhost:8888/?token=d992448fc79acd0c938cecdc3282ca146cc2d4d4afc16320
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;최초 접근시에는 위에 표시된 토큰을 입력해야 한다.&lt;/p&gt;
-
-&lt;h3 id=&#34;폴더-쓰기-권한-설정&#34;&gt;폴더 쓰기 권한 설정&lt;/h3&gt;
-
-&lt;p&gt;Docker 실행시 호스트 볼륨 동기화를 선언 해주면 Jupyter에서 파일을 저장할 수 없는 경우가 생긴다. 이 경우에 호스트의 공유된 폴더에 대해 그룹 권한을 변경해주면 쓰기가 가능해진다.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ chgrp 100 src
-$ chmod g+w src
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;해당 사항에 대한 상세한 설명은 Jupyter의 &lt;a href=&#34;https://github.com/jupyter/docker-stacks/issues/114&#34; target=&#34;_blank&#34;&gt;github 이슈&lt;/a&gt;에서 찾을 수 있다.&lt;/p&gt;
-</description>
+      <description>Docker 설치하기 구글클라우드 Compute Engine에서 Ubuntu 16.04 LTS 인스턴스 런치 후 SSH로 접속 후 아래의 명령어로 도커를 설치한다.
+$ sudo apt-get update $ sudo apt-get install docker.io $ sudo usermod -aG docker $USER  Dockerfile 빌드하기 원하는 시스템 설정의 Dockerfile을 작성하거나 다운 받는다. 본 예제의 경우 Newsmine 프로젝트의 Dockerfile을 Git 허브로 부터 직접 다운 받는다. Dockerfile이 존재하는 디렉토리에서 아래의 명령을 실행하면 Docker 빌드가 시작된다.
+$ sudo docker build --tag newsmine:latest .</description>
     </item>
     
   </channel>

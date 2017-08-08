@@ -1,187 +1,126 @@
-<!DOCTYPE html>
+<body>
+  <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="" name="keywords">
+<meta content="Scrapy101 - Suhong&#39;s Notes" property="og:title">
+<title>Scrapy101 | Suhong&#39;s Notes</title>
+<link rel="stylesheet" href="https://suhongs.github.io//css/style.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-  <title>Scrapy101</title>
-  
-  <meta name="author" content=""/>
-  <meta name="generator" content="Hugo 0.18.1" />
-  
-
-  <link rel="alternate" href="https://suhongs.github.io/index.xml" type="application/rss+xml" title="Suhong&#39;s Notes">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://suhongs.github.io//css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://suhongs.github.io//css/main.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-  <link rel="stylesheet" href="https://suhongs.github.io//css/pygment_highlights.css" />
-  <link rel="stylesheet" href="https://suhongs.github.io/css/highlight.min.css">
-  
-  
-  <meta property="og:title" content="Scrapy101" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="/kr/series/scrapy101/" />
-  <meta property="og:image" content="/" />
-  
-</head>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
 
-  <body>
-
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="https://suhongs.github.io/">Suhong&#39;s Notes</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-      
-        
-          <li>
-          <a title="KR" href="/kr/">KR</a>
-  	      </li>
-  	    
-      
-        
-          <li>
-          <a title="En" href="/">En</a>
-  	      </li>
-  	    
-      
-      </ul>
-    </div>
-
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-      
-	  </div>
-	</div>
-
-  </div>
-</nav>
-
-
-    <header class="header-section ">
-      <div class="intro-header no-img">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <div class="page-heading">
-                <h1>Scrapy101</h1>
-              </div>
-            </div>
-          </div>
-        </div>
+  <section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="/kr/"><h1 class="title is-4">Suhong&#39;s Notes</h1></a>
       </div>
-    </header>
-    <div role="main" class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <div class="posts-list">
-            
-            
-            <article class="post-preview">
-              <a href="https://suhongs.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/">
-              <h2 class="post-title">Ubuntu에 Scrapy 설치하기</h2>
-            
-                
-              </a>
-              
-              <p class="post-meta">
-                Posted on February 7, 2017
-              </p>
-            
-              <div class="post-entry">
-                본 문서는 Scrapy 공식 문서의 Installing Scrapy를 참고 했습니다. 해당 문서에 따르면 Scrapy는 Ubuntu 12.04 이상을 지원하고 있습니다. 또한 Ubuntu에서 자체 지원하는 python-scrapy는 Scrapy의 최신 버전과는 성능등의 측면에서 사용하지 말것을 권고하고 있습니다. 아래의 작업은 Ubuntu 16.04.1 LTS 에서 실행 됐습니다.
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="nav-item" href="/kr/">
+            KR
+          </a>
+          
+          <a class="nav-item" href="/">
+            EN
+          </a>
+          
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+  <section class="section">
+    <div class="container">
+      
+      <article>
+        <h2 class="subtitle is-6">February 7, 2017</h2>
+        <h1 class="title"><a href="https://suhongs.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/">Ubuntu에 Scrapy 설치하기</a></h1>
+        
+        <div class="tags">
+    
+        <a class="button is-link" href="/kr/tags/scrapy">scrapy</a>
+    
+        <a class="button is-link" href="/kr/tags/ubuntu">ubuntu</a>
+    
+</div>
+
+        
+        <div class="content">
+          본 문서는 Scrapy 공식 문서의 Installing Scrapy를 참고 했습니다. 해당 문서에 따르면 Scrapy는 Ubuntu 12.04 이상을 지원하고 있습니다. 또한 Ubuntu에서 자체 지원하는 python-scrapy는 Scrapy의 최신 버전과는 성능등의 측면에서 사용하지 말것을 권고하고 있습니다. 아래의 작업은 Ubuntu 16.04.1 LTS 에서 실행 됐습니다.
 관련 패키지 설치 Scrapy를 설치하기 전에 실행하기 위해 필요한 연관 패키지들을 아래의 명령으로 설치합니다.
 sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev  Scrapy를 Python3로 활용하고 싶을 경우에는 아래의 명령으로 필요한 패키지를 먼저 설치합니다.
-              <a href="https://suhongs.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/" class="post-read-more">[Read&nbsp;More]</a>
-              </div>
-            
-             </article>
-            
-          </div>
-
+          
+          ...<a class="button is-link" href="https://suhongs.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/" style="height:28px">
+            Read more
+            <span class="icon is-small">
+              <i class="fa fa-angle-double-right"></i>
+            </span>
+          </a>
+          
+        </div>
+      </article>
+      
+    </div>
+  </section>
+  <section class="section">
+  <div class="container">
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <div class="level-item">
+          
+          <a class="button is-disabled">
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-left"></i>
+            </span>
+            Newer
+          </a>
           
         </div>
       </div>
-    </div>
-    <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <ul class="list-inline text-center footer-links">
+      <div class="level-right is-marginless">
+        <div class="level-item">
           
+          <a class="button is-disabled">
+            Older
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-right"></i>
+            </span>
+          </a>
           
-		      
-		      
-		      
-	    	  
-          
-          
-
-    		  <li>
-      			<a href="https://suhongs.github.io/index.xml" title="RSS">
-      			  <span class="fa-stack fa-lg">
-        				<i class="fa fa-circle fa-stack-2x"></i>
-        				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-      			  </span>
-      			</a>
-    		  </li>		
-
-        </ul>
-        <p class="credits copyright text-muted">
-    	  
-    	  &nbsp;&bull;&nbsp;
-    	  2017
-    		  
-    	  
-    	  &nbsp;&bull;&nbsp;
-    	  <a href="https://suhongs.github.io/">Suhong&#39;s Notes</a>
-    	  
-  	    </p>
-  	    
-    	<p class="credits theme-by text-muted">
-          <a href="http://gohugo.io">Hugo v0.18.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a> adapted to <a href="https://github.com/1138-4EB/beautifulhugo">Beautiful Hugo</a>
-          
-    	</p>
+        </div>
       </div>
-    </div>
+    </nav>
   </div>
-</footer>
+</section>
 
-<script src="https://suhongs.github.io//js/jquery-1.11.2.min.js"></script>
-<script src="https://suhongs.github.io//js/bootstrap.min.js"></script>
-<script src="https://suhongs.github.io//js/main.js"></script>
-<script src="https://suhongs.github.io/js/highlight.min.js"></script>
+  <section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
 <script>
-  hljs.initHighlightingOnLoad();
-</script>
-
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 ga('create', 'UA-43044462-6', 'auto');
 ga('send', 'pageview');
 </script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
 
 
 
-  </body>
-</html>
+</body>
