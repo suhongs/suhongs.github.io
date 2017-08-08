@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Suhong&#39;s Notes</title>
+    <link>https://suhongs.github.io/kr/tags/</link>
+    <description>Recent content in Tags on Suhong&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 06 Feb 2017 11:39:27 +0900</lastBuildDate>
+    
+	<atom:link href="https://suhongs.github.io/kr/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Development</title>
+      <link>https://suhongs.github.io/kr/tags/development/</link>
+      <pubDate>Mon, 06 Feb 2017 11:39:27 +0900</pubDate>
+      
+      <guid>https://suhongs.github.io/kr/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://suhongs.github.io/kr/tags/docker/</link>
+      <pubDate>Mon, 06 Feb 2017 11:39:27 +0900</pubDate>
+      
+      <guid>https://suhongs.github.io/kr/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Cloud</title>
+      <link>https://suhongs.github.io/kr/tags/google-cloud/</link>
+      <pubDate>Mon, 06 Feb 2017 11:39:27 +0900</pubDate>
+      
+      <guid>https://suhongs.github.io/kr/tags/google-cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scrapy</title>
+      <link>https://suhongs.github.io/kr/tags/scrapy/</link>
+      <pubDate>Tue, 07 Feb 2017 10:00:12 +0900</pubDate>
+      
+      <guid>https://suhongs.github.io/kr/tags/scrapy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>https://suhongs.github.io/kr/tags/ubuntu/</link>
+      <pubDate>Tue, 07 Feb 2017 10:00:12 +0900</pubDate>
+      
+      <guid>https://suhongs.github.io/kr/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
