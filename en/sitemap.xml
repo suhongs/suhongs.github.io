@@ -3,14 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://suhongs.github.io/2017/02/connect-to-docker-containers/</loc>
+    <loc>https://suhongs.github.io/en/2017/02/connect-to-docker-containers/</loc>
     <lastmod>2017-02-18T22:11:48+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://suhongs.github.io/categories/</loc>
+    <loc>https://suhongs.github.io/en/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
@@ -21,12 +21,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://suhongs.github.io/categories/"
+                href="https://suhongs.github.io/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://suhongs.github.io/post/</loc>
+    <loc>https://suhongs.github.io/en/post/</loc>
     <lastmod>2017-02-18T22:11:48+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -38,12 +38,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://suhongs.github.io/post/"
+                href="https://suhongs.github.io/en/post/"
                 />
   </url>
   
   <url>
-    <loc>https://suhongs.github.io/series/</loc>
+    <loc>https://suhongs.github.io/en/series/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
@@ -54,12 +54,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://suhongs.github.io/series/"
+                href="https://suhongs.github.io/en/series/"
                 />
   </url>
   
   <url>
-    <loc>https://suhongs.github.io/</loc>
+    <loc>https://suhongs.github.io/en/</loc>
     <lastmod>2017-02-18T22:11:48+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -71,12 +71,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://suhongs.github.io/"
+                href="https://suhongs.github.io/en/"
                 />
   </url>
   
   <url>
-    <loc>https://suhongs.github.io/tags/</loc>
+    <loc>https://suhongs.github.io/en/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
@@ -87,7 +87,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://suhongs.github.io/tags/"
+                href="https://suhongs.github.io/en/tags/"
                 />
   </url>
   

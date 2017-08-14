@@ -30,7 +30,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://suhongs.github.io/categories/"
+                href="https://suhongs.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -47,15 +47,15 @@
   </url>
   
   <url>
-    <loc>https://suhongs.github.io/kr/categories/development/</loc>
-    <lastmod>2017-02-07T10:00:12+09:00</lastmod>
+    <loc>https://suhongs.github.io/kr/tags/development/</loc>
+    <lastmod>2017-02-06T11:39:27+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://suhongs.github.io/kr/tags/development/</loc>
-    <lastmod>2017-02-06T11:39:27+09:00</lastmod>
+    <loc>https://suhongs.github.io/kr/categories/development/</loc>
+    <lastmod>2017-02-07T10:00:12+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -89,7 +89,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://suhongs.github.io/post/"
+                href="https://suhongs.github.io/en/post/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -134,7 +134,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://suhongs.github.io/series/"
+                href="https://suhongs.github.io/en/series/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -151,7 +151,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://suhongs.github.io/"
+                href="https://suhongs.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -168,7 +168,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://suhongs.github.io/tags/"
+                href="https://suhongs.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
