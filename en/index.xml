@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Suhong&#39;s Notes</title>
+    <link>https://suhongs.github.io/en/</link>
+    <description>Recent content on Suhong&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 18 Feb 2017 22:11:48 +0900</lastBuildDate>
+    
+	<atom:link href="https://suhongs.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Connect to Docker containers</title>
+      <link>https://suhongs.github.io/en/2017/02/connect-to-docker-containers/</link>
+      <pubDate>Sat, 18 Feb 2017 22:11:48 +0900</pubDate>
+      
+      <guid>https://suhongs.github.io/en/2017/02/connect-to-docker-containers/</guid>
+      <description>While using docker, we ocasionally have to connect to another Docker container such as mysql. In this case, we have to use Docker --network flag.
+Although Docker provided --link flag before 1.9.0 version, this flag is a deprecated legacy feature according to Legacy container links.
+This document shows how to declare Docker network using --network flag.
+$ docker network create tikahost $ docker run -d -p 9998:9998 --name tika --network tikahost logicalspark/docker-tikaserver $ docker run --name daumlab -p 8888:8888 -v &#39;/home/vagrant/Project/daum/scrapy:/home/jovyan/work&#39; -d --network tikahost newsmine:latest  After declaring Docker network, containers can be connected using their Docker name.</description>
+    </item>
+    
+  </channel>
+</rss>
