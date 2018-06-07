@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker on Suhong&#39;s Datalab</title>
+    <title>Docker on Suhong&#39;s lab</title>
     <link>https://suhongs.github.io/kr/tags/docker/</link>
-    <description>Recent content in Docker on Suhong&#39;s Datalab</description>
+    <description>Recent content in Docker on Suhong&#39;s lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 06 Feb 2017 11:39:27 +0900</lastBuildDate>
     
