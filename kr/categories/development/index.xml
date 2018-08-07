@@ -5,10 +5,20 @@
     <link>https://suhongs.github.io/kr/categories/development/</link>
     <description>Recent content in Development on Suhong&#39;s lab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 07 Feb 2017 10:00:12 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 30 Jul 2018 08:31:47 +0900</lastBuildDate>
     
 	<atom:link href="https://suhongs.github.io/kr/categories/development/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AWS와 GCP간의 Tesla V100 GPU 인스턴스 가격 비교</title>
+      <link>https://suhongs.github.io/kr/2018/07/aws%EC%99%80-gcp%EA%B0%84%EC%9D%98-tesla-v100-gpu-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EA%B0%80%EA%B2%A9-%EB%B9%84%EA%B5%90/</link>
+      <pubDate>Mon, 30 Jul 2018 08:31:47 +0900</pubDate>
+      
+      <guid>https://suhongs.github.io/kr/2018/07/aws%EC%99%80-gcp%EA%B0%84%EC%9D%98-tesla-v100-gpu-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EA%B0%80%EA%B2%A9-%EB%B9%84%EA%B5%90/</guid>
+      <description>Tesla V100 가격 비교 본 문서는 Amazon EC2 P3 인스턴스 제품 정보 페이지의 서비스 사양을 기준으로 2018년 7월 30일 기준으로 작성된 것이며 Google Cloud Platform 의 경우 Amazon에서 제시한 기준으로 Compute Engine에서 예측 되는 가격을 표시한 것 입니다. 실질적인 가격은 달라질 수 있습니다.
+   # GPU # CPU RAM (GB) AWS ($/hr) GCP ($/hr)     1 8 61 3.06 2.2   4 32 244 12.</description>
+    </item>
     
     <item>
       <title>Ubuntu에 Scrapy 설치하기</title>

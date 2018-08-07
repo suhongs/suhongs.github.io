@@ -1,0 +1,151 @@
+<body>
+  <!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="" name="keywords">
+<meta content="AWS와 GCP간의 Tesla V100 GPU 인스턴스 가격 비교 - Suhong&#39;s lab" property="og:title">
+<title>AWS와 GCP간의 Tesla V100 GPU 인스턴스 가격 비교 | Suhong&#39;s lab</title>
+<link rel="stylesheet" href="https://suhongs.github.io/css/style.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+  <section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="/kr/"><h1 class="title is-4">Suhong&#39;s lab</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="nav-item" href="/kr/">
+            KR
+          </a>
+          
+          <a class="nav-item" href="/en/">
+            EN
+          </a>
+          
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="subtitle is-6">July 30, 2018</h2>
+      <h1 class="title">AWS와 GCP간의 Tesla V100 GPU 인스턴스 가격 비교</h1>
+      
+      <div class="tags">
+    
+        <a class="button is-link" href="/kr/tags/cloud">Cloud</a>
+    
+        <a class="button is-link" href="/kr/tags/aws">AWS</a>
+    
+        <a class="button is-link" href="/kr/tags/gcp">GCP</a>
+    
+        <a class="button is-link" href="/kr/tags/v100">V100</a>
+    
+</div>
+
+      
+      <div class="content">
+        
+
+<h2 id="tesla-v100-가격-비교">Tesla V100 가격 비교</h2>
+
+<p>본 문서는 Amazon EC2 P3 인스턴스 <a href="https://aws.amazon.com/ko/ec2/instance-types/p3/" target="_blank">제품 정보 페이지</a>의 서비스 사양을 기준으로 2018년 7월 30일 기준으로 작성된 것이며 Google Cloud Platform 의 경우 Amazon에서 제시한 기준으로 Compute Engine에서 예측 되는 가격을 표시한 것 입니다. 실질적인 가격은 달라질 수 있습니다.</p>
+
+<table>
+<thead>
+<tr>
+<th># GPU</th>
+<th># CPU</th>
+<th align="right">RAM (GB)</th>
+<th align="right">AWS ($/hr)</th>
+<th align="right">GCP ($/hr)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>8</td>
+<td align="right">61</td>
+<td align="right">3.06</td>
+<td align="right">2.2</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>32</td>
+<td align="right">244</td>
+<td align="right">12.24</td>
+<td align="right">8.635</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>64</td>
+<td align="right">488</td>
+<td align="right">24.48</td>
+<td align="right">17.21</td>
+</tr>
+</tbody>
+</table>
+
+      </div>
+    </div>
+  </section>
+  
+<section class="section">
+  <div class="container">
+    <aside><div id="disqus_thread"></div></aside>
+    <script type="text/javascript">
+      var disqus_shortname = 'suhongs-kr';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+  <section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-43044462-6', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</body>
