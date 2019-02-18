@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on Suhong&#39;s lab</title>
-    <link>https://suhongs.github.io/kr/series/</link>
-    <description>Recent content in Series on Suhong&#39;s lab</description>
+    <title>Series on Theo&#39;s lab</title>
+    <link>https://theoseo.github.io/kr/series/</link>
+    <description>Recent content in Series on Theo&#39;s lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 06 Feb 2017 11:39:27 +0900</lastBuildDate>
     
-	<atom:link href="https://suhongs.github.io/kr/series/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://theoseo.github.io/kr/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Docker Builds</title>
-      <link>https://suhongs.github.io/kr/series/docker-builds/</link>
+      <link>https://theoseo.github.io/kr/series/docker-builds/</link>
       <pubDate>Mon, 06 Feb 2017 11:39:27 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/series/docker-builds/</guid>
+      <guid>https://theoseo.github.io/kr/series/docker-builds/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Reinforcement Learning</title>
-      <link>https://suhongs.github.io/kr/series/reinforcement-learning/</link>
+      <link>https://theoseo.github.io/kr/series/reinforcement-learning/</link>
       <pubDate>Mon, 14 Aug 2017 10:29:45 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/series/reinforcement-learning/</guid>
+      <guid>https://theoseo.github.io/kr/series/reinforcement-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scrapy101</title>
-      <link>https://suhongs.github.io/kr/series/scrapy101/</link>
+      <link>https://theoseo.github.io/kr/series/scrapy101/</link>
       <pubDate>Tue, 07 Feb 2017 10:00:12 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/series/scrapy101/</guid>
+      <guid>https://theoseo.github.io/kr/series/scrapy101/</guid>
       <description></description>
     </item>
     

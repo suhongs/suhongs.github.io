@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Suhong&#39;s lab</title>
-    <link>https://suhongs.github.io/en/post/</link>
-    <description>Recent content in Posts on Suhong&#39;s lab</description>
+    <title>Posts on Theo&#39;s lab</title>
+    <link>https://theoseo.github.io/en/post/</link>
+    <description>Recent content in Posts on Theo&#39;s lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 18 Feb 2017 22:11:48 +0900</lastBuildDate>
     
-	<atom:link href="https://suhongs.github.io/en/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://theoseo.github.io/en/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Connect to Docker containers</title>
-      <link>https://suhongs.github.io/en/2017/02/connect-to-docker-containers/</link>
+      <link>https://theoseo.github.io/en/2017/02/connect-to-docker-containers/</link>
       <pubDate>Sat, 18 Feb 2017 22:11:48 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/en/2017/02/connect-to-docker-containers/</guid>
+      <guid>https://theoseo.github.io/en/2017/02/connect-to-docker-containers/</guid>
       <description>While using docker, we ocasionally have to connect to another Docker container such as mysql. In this case, we have to use Docker --network flag.
 Although Docker provided --link flag before 1.9.0 version, this flag is a deprecated legacy feature according to Legacy container links.
 This document shows how to declare Docker network using --network flag.
@@ -24,10 +24,10 @@ $ docker network create tikahost $ docker run -d -p 9998:9998 --name tika --netw
     
     <item>
       <title></title>
-      <link>https://suhongs.github.io/en/1/01/</link>
+      <link>https://theoseo.github.io/en/1/01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://suhongs.github.io/en/1/01/</guid>
+      <guid>https://theoseo.github.io/en/1/01/</guid>
       <description></description>
     </item>
     

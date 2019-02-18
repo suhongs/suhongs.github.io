@@ -3,97 +3,97 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://suhongs.github.io/en/2017/02/connect-to-docker-containers/</loc>
+    <loc>https://theoseo.github.io/en/2017/02/connect-to-docker-containers/</loc>
     <lastmod>2017-02-18T22:11:48+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://suhongs.github.io/en/1/01/</loc>
+    <loc>https://theoseo.github.io/en/1/01/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://suhongs.github.io/en/categories/</loc>
+    <loc>https://theoseo.github.io/en/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="kr"
-                href="https://suhongs.github.io/kr/categories/"
+                href="https://theoseo.github.io/kr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://suhongs.github.io/en/categories/"
+                href="https://theoseo.github.io/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://suhongs.github.io/en/post/</loc>
+    <loc>https://theoseo.github.io/en/post/</loc>
     <lastmod>2017-02-18T22:11:48+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="kr"
-                href="https://suhongs.github.io/kr/post/"
+                href="https://theoseo.github.io/kr/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://suhongs.github.io/en/post/"
+                href="https://theoseo.github.io/en/post/"
                 />
   </url>
   
   <url>
-    <loc>https://suhongs.github.io/en/series/</loc>
+    <loc>https://theoseo.github.io/en/series/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="kr"
-                href="https://suhongs.github.io/kr/series/"
+                href="https://theoseo.github.io/kr/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://suhongs.github.io/en/series/"
+                href="https://theoseo.github.io/en/series/"
                 />
   </url>
   
   <url>
-    <loc>https://suhongs.github.io/en/</loc>
+    <loc>https://theoseo.github.io/en/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://theoseo.github.io/kr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theoseo.github.io/en/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/</loc>
     <lastmod>2017-02-18T22:11:48+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="kr"
-                href="https://suhongs.github.io/kr/"
+                href="https://theoseo.github.io/kr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://suhongs.github.io/en/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://suhongs.github.io/en/tags/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="https://suhongs.github.io/kr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://suhongs.github.io/en/tags/"
+                href="https://theoseo.github.io/en/"
                 />
   </url>
   

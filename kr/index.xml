@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Suhong&#39;s lab</title>
-    <link>https://suhongs.github.io/kr/</link>
-    <description>Recent content on Suhong&#39;s lab</description>
+    <title>Theo&#39;s lab</title>
+    <link>https://theoseo.github.io/kr/</link>
+    <description>Recent content on Theo&#39;s lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 30 Jul 2018 08:31:47 +0900</lastBuildDate>
     
-	<atom:link href="https://suhongs.github.io/kr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://theoseo.github.io/kr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AWS와 GCP간의 Tesla V100 GPU 인스턴스 가격 비교</title>
-      <link>https://suhongs.github.io/kr/2018/07/aws%EC%99%80-gcp%EA%B0%84%EC%9D%98-tesla-v100-gpu-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EA%B0%80%EA%B2%A9-%EB%B9%84%EA%B5%90/</link>
+      <link>https://theoseo.github.io/kr/2018/07/aws%EC%99%80-gcp%EA%B0%84%EC%9D%98-tesla-v100-gpu-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EA%B0%80%EA%B2%A9-%EB%B9%84%EA%B5%90/</link>
       <pubDate>Mon, 30 Jul 2018 08:31:47 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/2018/07/aws%EC%99%80-gcp%EA%B0%84%EC%9D%98-tesla-v100-gpu-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EA%B0%80%EA%B2%A9-%EB%B9%84%EA%B5%90/</guid>
+      <guid>https://theoseo.github.io/kr/2018/07/aws%EC%99%80-gcp%EA%B0%84%EC%9D%98-tesla-v100-gpu-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4-%EA%B0%80%EA%B2%A9-%EB%B9%84%EA%B5%90/</guid>
       <description>Tesla V100 가격 비교 본 문서는 Amazon EC2 P3 인스턴스 제품 정보 페이지의 서비스 사양을 기준으로 2018년 7월 30일 기준으로 작성된 것이며 Google Cloud Platform 의 경우 Amazon에서 제시한 기준으로 Compute Engine에서 예측 되는 가격을 표시한 것 입니다. 실질적인 가격은 달라질 수 있습니다.
    # GPU # CPU RAM (GB) AWS ($/hr) GCP ($/hr)     1 8 61 3.06 2.2   4 32 244 12.</description>
     </item>
     
     <item>
       <title>강화학습을 어떻게 공부하면 좋을까?</title>
-      <link>https://suhongs.github.io/kr/2017/08/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5%EC%9D%84-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B3%B5%EB%B6%80%ED%95%98%EB%A9%B4-%EC%A2%8B%EC%9D%84%EA%B9%8C/</link>
+      <link>https://theoseo.github.io/kr/2017/08/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5%EC%9D%84-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B3%B5%EB%B6%80%ED%95%98%EB%A9%B4-%EC%A2%8B%EC%9D%84%EA%B9%8C/</link>
       <pubDate>Mon, 14 Aug 2017 10:29:45 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/2017/08/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5%EC%9D%84-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B3%B5%EB%B6%80%ED%95%98%EB%A9%B4-%EC%A2%8B%EC%9D%84%EA%B9%8C/</guid>
+      <guid>https://theoseo.github.io/kr/2017/08/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5%EC%9D%84-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B3%B5%EB%B6%80%ED%95%98%EB%A9%B4-%EC%A2%8B%EC%9D%84%EA%B9%8C/</guid>
       <description>Quora 에 2016년 9월 올라온 How do I learn reinforcement learning? 이라는 질문에 대한 Andrej Karpathy의 인상적인 답변을 중심으로 공부 방법을 정리해보자. 해당 답변에서 그는 우선 기본적인 학습 방법에 대해 다음과 같이 설명했다.
  자신의 블로그의 Deep Reinforcement Learning:Pong from Pixels라는 포스트에 연관 링크가 있고 해당 포스트가 요즘 사용되는 강화학습의 기본적 아이디어에 대해 친절히 소개하고 있다. 좀 더 기술적 이해를 원한다면 Sutton의 책 Reinforcement Learning:An Introduction을 통해서 기본을 익히고 John Schulman 이나 Pieter Abbeel의 비디오를 시청하라고 추천한다.</description>
     </item>
     
     <item>
       <title>Ubuntu에 Scrapy 설치하기</title>
-      <link>https://suhongs.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
+      <link>https://theoseo.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</link>
       <pubDate>Tue, 07 Feb 2017 10:00:12 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://theoseo.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
       <description>본 문서는 Scrapy 공식 문서의 Installing Scrapy를 참고 했습니다. 해당 문서에 따르면 Scrapy는 Ubuntu 12.04 이상을 지원하고 있습니다. 또한 Ubuntu에서 자체 지원하는 python-scrapy는 Scrapy의 최신 버전과는 성능등의 측면에서 사용하지 말것을 권고하고 있습니다. 아래의 작업은 Ubuntu 16.04.1 LTS 에서 실행 됐습니다.
 관련 패키지 설치 Scrapy를 설치하기 전에 실행하기 위해 필요한 연관 패키지들을 아래의 명령으로 설치합니다.
 sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev  Scrapy를 Python3로 활용하고 싶을 경우에는 아래의 명령으로 필요한 패키지를 먼저 설치합니다.</description>
@@ -43,10 +43,10 @@ sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev l
     
     <item>
       <title>구글 클라우드에서 Docker 빌드하기</title>
-      <link>https://suhongs.github.io/kr/2017/02/%EA%B5%AC%EA%B8%80-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%97%90%EC%84%9C-docker-%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0/</link>
+      <link>https://theoseo.github.io/kr/2017/02/%EA%B5%AC%EA%B8%80-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%97%90%EC%84%9C-docker-%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0/</link>
       <pubDate>Mon, 06 Feb 2017 11:39:27 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/2017/02/%EA%B5%AC%EA%B8%80-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%97%90%EC%84%9C-docker-%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://theoseo.github.io/kr/2017/02/%EA%B5%AC%EA%B8%80-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%97%90%EC%84%9C-docker-%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0/</guid>
       <description>Docker 설치하기 구글클라우드 Compute Engine에서 Ubuntu 16.04 LTS 인스턴스 런치 후 SSH로 접속 후 아래의 명령어로 도커를 설치한다.
 $ sudo apt-get update $ sudo apt-get install docker.io $ sudo usermod -aG docker $USER  Dockerfile 빌드하기 원하는 시스템 설정의 Dockerfile을 작성하거나 다운 받는다. 본 예제의 경우 Newsmine 프로젝트의 Dockerfile을 Git 허브로 부터 직접 다운 받는다. Dockerfile이 존재하는 디렉토리에서 아래의 명령을 실행하면 Docker 빌드가 시작된다.
 $ sudo docker build --tag newsmine:latest .</description>

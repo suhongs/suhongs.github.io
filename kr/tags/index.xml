@@ -1,111 +1,111 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Suhong&#39;s lab</title>
-    <link>https://suhongs.github.io/kr/tags/</link>
-    <description>Recent content in Tags on Suhong&#39;s lab</description>
+    <title>Tags on Theo&#39;s lab</title>
+    <link>https://theoseo.github.io/kr/tags/</link>
+    <description>Recent content in Tags on Theo&#39;s lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 30 Jul 2018 08:31:47 +0900</lastBuildDate>
     
-	<atom:link href="https://suhongs.github.io/kr/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://theoseo.github.io/kr/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Aws</title>
-      <link>https://suhongs.github.io/kr/tags/aws/</link>
+      <link>https://theoseo.github.io/kr/tags/aws/</link>
       <pubDate>Mon, 30 Jul 2018 08:31:47 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/tags/aws/</guid>
+      <guid>https://theoseo.github.io/kr/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cloud</title>
-      <link>https://suhongs.github.io/kr/tags/cloud/</link>
+      <link>https://theoseo.github.io/kr/tags/cloud/</link>
       <pubDate>Mon, 30 Jul 2018 08:31:47 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/tags/cloud/</guid>
+      <guid>https://theoseo.github.io/kr/tags/cloud/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Deep Reinforcement Learning</title>
-      <link>https://suhongs.github.io/kr/tags/deep-reinforcement-learning/</link>
+      <link>https://theoseo.github.io/kr/tags/deep-reinforcement-learning/</link>
       <pubDate>Mon, 14 Aug 2017 10:29:45 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/tags/deep-reinforcement-learning/</guid>
+      <guid>https://theoseo.github.io/kr/tags/deep-reinforcement-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>https://suhongs.github.io/kr/tags/development/</link>
+      <link>https://theoseo.github.io/kr/tags/development/</link>
       <pubDate>Mon, 06 Feb 2017 11:39:27 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/tags/development/</guid>
+      <guid>https://theoseo.github.io/kr/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>https://suhongs.github.io/kr/tags/docker/</link>
+      <link>https://theoseo.github.io/kr/tags/docker/</link>
       <pubDate>Mon, 06 Feb 2017 11:39:27 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/tags/docker/</guid>
+      <guid>https://theoseo.github.io/kr/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gcp</title>
-      <link>https://suhongs.github.io/kr/tags/gcp/</link>
+      <link>https://theoseo.github.io/kr/tags/gcp/</link>
       <pubDate>Mon, 30 Jul 2018 08:31:47 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/tags/gcp/</guid>
+      <guid>https://theoseo.github.io/kr/tags/gcp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Google Cloud</title>
-      <link>https://suhongs.github.io/kr/tags/google-cloud/</link>
+      <link>https://theoseo.github.io/kr/tags/google-cloud/</link>
       <pubDate>Mon, 06 Feb 2017 11:39:27 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/tags/google-cloud/</guid>
+      <guid>https://theoseo.github.io/kr/tags/google-cloud/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rl</title>
-      <link>https://suhongs.github.io/kr/tags/rl/</link>
+      <link>https://theoseo.github.io/kr/tags/rl/</link>
       <pubDate>Mon, 14 Aug 2017 10:29:45 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/tags/rl/</guid>
+      <guid>https://theoseo.github.io/kr/tags/rl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scrapy</title>
-      <link>https://suhongs.github.io/kr/tags/scrapy/</link>
+      <link>https://theoseo.github.io/kr/tags/scrapy/</link>
       <pubDate>Tue, 07 Feb 2017 10:00:12 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/tags/scrapy/</guid>
+      <guid>https://theoseo.github.io/kr/tags/scrapy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ubuntu</title>
-      <link>https://suhongs.github.io/kr/tags/ubuntu/</link>
+      <link>https://theoseo.github.io/kr/tags/ubuntu/</link>
       <pubDate>Tue, 07 Feb 2017 10:00:12 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/tags/ubuntu/</guid>
+      <guid>https://theoseo.github.io/kr/tags/ubuntu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>V100</title>
-      <link>https://suhongs.github.io/kr/tags/v100/</link>
+      <link>https://theoseo.github.io/kr/tags/v100/</link>
       <pubDate>Mon, 30 Jul 2018 08:31:47 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/tags/v100/</guid>
+      <guid>https://theoseo.github.io/kr/tags/v100/</guid>
       <description></description>
     </item>
     

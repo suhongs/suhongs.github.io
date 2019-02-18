@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Deep Reinforcement Learning on Suhong&#39;s lab</title>
-    <link>https://suhongs.github.io/kr/tags/deep-reinforcement-learning/</link>
-    <description>Recent content in Deep Reinforcement Learning on Suhong&#39;s lab</description>
+    <title>Deep Reinforcement Learning on Theo&#39;s lab</title>
+    <link>https://theoseo.github.io/kr/tags/deep-reinforcement-learning/</link>
+    <description>Recent content in Deep Reinforcement Learning on Theo&#39;s lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 14 Aug 2017 10:29:45 +0900</lastBuildDate>
     
-	<atom:link href="https://suhongs.github.io/kr/tags/deep-reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://theoseo.github.io/kr/tags/deep-reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>강화학습을 어떻게 공부하면 좋을까?</title>
-      <link>https://suhongs.github.io/kr/2017/08/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5%EC%9D%84-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B3%B5%EB%B6%80%ED%95%98%EB%A9%B4-%EC%A2%8B%EC%9D%84%EA%B9%8C/</link>
+      <link>https://theoseo.github.io/kr/2017/08/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5%EC%9D%84-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B3%B5%EB%B6%80%ED%95%98%EB%A9%B4-%EC%A2%8B%EC%9D%84%EA%B9%8C/</link>
       <pubDate>Mon, 14 Aug 2017 10:29:45 +0900</pubDate>
       
-      <guid>https://suhongs.github.io/kr/2017/08/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5%EC%9D%84-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B3%B5%EB%B6%80%ED%95%98%EB%A9%B4-%EC%A2%8B%EC%9D%84%EA%B9%8C/</guid>
+      <guid>https://theoseo.github.io/kr/2017/08/%EA%B0%95%ED%99%94%ED%95%99%EC%8A%B5%EC%9D%84-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B3%B5%EB%B6%80%ED%95%98%EB%A9%B4-%EC%A2%8B%EC%9D%84%EA%B9%8C/</guid>
       <description>Quora 에 2016년 9월 올라온 How do I learn reinforcement learning? 이라는 질문에 대한 Andrej Karpathy의 인상적인 답변을 중심으로 공부 방법을 정리해보자. 해당 답변에서 그는 우선 기본적인 학습 방법에 대해 다음과 같이 설명했다.
  자신의 블로그의 Deep Reinforcement Learning:Pong from Pixels라는 포스트에 연관 링크가 있고 해당 포스트가 요즘 사용되는 강화학습의 기본적 아이디어에 대해 친절히 소개하고 있다. 좀 더 기술적 이해를 원한다면 Sutton의 책 Reinforcement Learning:An Introduction을 통해서 기본을 익히고 John Schulman 이나 Pieter Abbeel의 비디오를 시청하라고 추천한다.</description>
     </item>
