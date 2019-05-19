@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="" name="keywords">
-<meta content="Docker - Theo&#39;s lab" property="og:title">
-<title>Docker | Theo&#39;s lab</title>
+<meta content="Scrapy - Theo&#39;s lab" property="og:title">
+<title>Scrapy | Theo&#39;s lab</title>
 <link rel="stylesheet" href="https://theoseo.github.io/css/style.css">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -16,7 +16,7 @@
   <div class="container">
     <nav class="nav">
       <div class="nav-left">
-        <a class="nav-item" href="/en/"><h1 class="title is-4">Theo&#39;s lab</h1></a>
+        <a class="nav-item" href="/kr/"><h1 class="title is-4">Theo&#39;s lab</h1></a>
       </div>
       <div class="nav-right">
         <nav class="nav-item level is-mobile">
@@ -40,56 +40,24 @@
     <div class="container">
       
       <article>
-        <h2 class="subtitle is-6">May 19, 2019</h2>
-        <h1 class="title"><a href="https://theoseo.github.io/en/2019/05/nori-analyzer-and-elk-stack/">Nori Analyzer and Elk Stack</a></h1>
+        <h2 class="subtitle is-6">February 7, 2017</h2>
+        <h1 class="title"><a href="https://theoseo.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/">Ubuntu에 Scrapy 설치하기</a></h1>
         
         <div class="tags">
     
-        <a class="button is-link" href="/en/tags/development">Development</a>
+        <a class="button is-link" href="/kr/tags/scrapy">scrapy</a>
     
-        <a class="button is-link" href="/en/tags/docker">Docker</a>
-    
-        <a class="button is-link" href="/en/tags/elastic">Elastic</a>
-    
-        <a class="button is-link" href="/en/tags/nori">Nori</a>
+        <a class="button is-link" href="/kr/tags/ubuntu">ubuntu</a>
     
 </div>
 
         
         <div class="content">
-          Recently, Elasticsearch announced its Korean analyzer nori. I test it using docker compose.
-Install Docker CE $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg-agent \ software-properties-common $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - $ sudo add-apt-repository \ &quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) \ stable&quot; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.io $ sudo usermod -aG docker $USER  Install Docker Compose $ sudo curl -L &quot;https://github.
+          본 문서는 Scrapy 공식 문서의 Installing Scrapy를 참고 했습니다. 해당 문서에 따르면 Scrapy는 Ubuntu 12.04 이상을 지원하고 있습니다. 또한 Ubuntu에서 자체 지원하는 python-scrapy는 Scrapy의 최신 버전과는 성능등의 측면에서 사용하지 말것을 권고하고 있습니다. 아래의 작업은 Ubuntu 16.04.1 LTS 에서 실행 됐습니다.
+관련 패키지 설치 Scrapy를 설치하기 전에 실행하기 위해 필요한 연관 패키지들을 아래의 명령으로 설치합니다.
+sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev  Scrapy를 Python3로 활용하고 싶을 경우에는 아래의 명령으로 필요한 패키지를 먼저 설치합니다.
           
-          ...<a class="button is-link" href="https://theoseo.github.io/en/2019/05/nori-analyzer-and-elk-stack/" style="height:28px">
-            Read more
-            <span class="icon is-small">
-              <i class="fa fa-angle-double-right"></i>
-            </span>
-          </a>
-          
-        </div>
-      </article>
-      
-      <article>
-        <h2 class="subtitle is-6">February 18, 2017</h2>
-        <h1 class="title"><a href="https://theoseo.github.io/en/2017/02/connect-to-docker-containers/">Connect to Docker containers</a></h1>
-        
-        <div class="tags">
-    
-        <a class="button is-link" href="/en/tags/docker">Docker</a>
-    
-        <a class="button is-link" href="/en/tags/ubuntu">ubuntu</a>
-    
-</div>
-
-        
-        <div class="content">
-          While using docker, we ocasionally have to connect to another Docker container such as mysql. In this case, we have to use Docker --network flag.
-Although Docker provided --link flag before 1.9.0 version, this flag is a deprecated legacy feature according to Legacy container links.
-This document shows how to declare Docker network using --network flag.
-$ docker network create tikahost $ docker run -d -p 9998:9998 --name tika --network tikahost logicalspark/docker-tikaserver $ docker run --name daumlab -p 8888:8888 -v '/home/vagrant/Project/daum/scrapy:/home/jovyan/work' -d --network tikahost newsmine:latest  After declaring Docker network, containers can be connected using their Docker name.
-          
-          ...<a class="button is-link" href="https://theoseo.github.io/en/2017/02/connect-to-docker-containers/" style="height:28px">
+          ...<a class="button is-link" href="https://theoseo.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/" style="height:28px">
             Read more
             <span class="icon is-small">
               <i class="fa fa-angle-double-right"></i>

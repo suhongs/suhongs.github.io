@@ -170,4 +170,21 @@
                 />
   </url>
   
+  <url>
+    <loc>https://theoseo.github.io/en/tags/ubuntu/</loc>
+    <lastmod>2017-02-18T22:11:48+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://theoseo.github.io/kr/tags/ubuntu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theoseo.github.io/en/tags/ubuntu/"
+                />
+  </url>
+  
 </urlset>

@@ -20,5 +20,17 @@
 Install Docker CE $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg-agent \ software-properties-common $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - $ sudo add-apt-repository \ &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) \ stable&amp;quot; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.io $ sudo usermod -aG docker $USER  Install Docker Compose $ sudo curl -L &amp;quot;https://github.</description>
     </item>
     
+    <item>
+      <title>Connect to Docker containers</title>
+      <link>https://theoseo.github.io/en/2017/02/connect-to-docker-containers/</link>
+      <pubDate>Sat, 18 Feb 2017 22:11:48 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/2017/02/connect-to-docker-containers/</guid>
+      <description>While using docker, we ocasionally have to connect to another Docker container such as mysql. In this case, we have to use Docker --network flag.
+Although Docker provided --link flag before 1.9.0 version, this flag is a deprecated legacy feature according to Legacy container links.
+This document shows how to declare Docker network using --network flag.
+$ docker network create tikahost $ docker run -d -p 9998:9998 --name tika --network tikahost logicalspark/docker-tikaserver $ docker run --name daumlab -p 8888:8888 -v &#39;/home/vagrant/Project/daum/scrapy:/home/jovyan/work&#39; -d --network tikahost newsmine:latest  After declaring Docker network, containers can be connected using their Docker name.</description>
+    </item>
+    
   </channel>
 </rss>

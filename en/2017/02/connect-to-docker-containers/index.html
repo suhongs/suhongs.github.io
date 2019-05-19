@@ -41,6 +41,15 @@
       <h2 class="subtitle is-6">February 18, 2017</h2>
       <h1 class="title">Connect to Docker containers</h1>
       
+      <div class="tags">
+    
+        <a class="button is-link" href="/en/tags/docker">Docker</a>
+    
+        <a class="button is-link" href="/en/tags/ubuntu">ubuntu</a>
+    
+</div>
+
+      
       <div class="content">
         <p>While using docker, we ocasionally have to connect to another Docker container such as mysql. In this case, we have to use Docker <code>--network</code> flag.</p>
 
@@ -48,14 +57,14 @@
 
 <p>This document shows how to declare Docker network using <code>--network</code> flag.</p>
 
-<pre><code>$ docker network create tikahost
+<pre><code class="language-bash">$ docker network create tikahost
 $ docker run -d -p 9998:9998 --name tika --network tikahost logicalspark/docker-tikaserver
 $ docker run --name daumlab -p 8888:8888 -v '/home/vagrant/Project/daum/scrapy:/home/jovyan/work' -d --network tikahost newsmine:latest
 </code></pre>
 
 <p>After declaring Docker network, containers can be connected using their Docker name. If you want to connect existing container to the network, you can use <code>docker network connect</code> commands.</p>
 
-<pre><code>$ docker network connect tikahost container
+<pre><code class="language-bash">$ docker network connect tikahost container
 </code></pre>
 
       </div>

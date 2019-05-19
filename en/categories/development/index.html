@@ -70,6 +70,35 @@ Install Docker CE $ sudo apt-get update $ sudo apt-get install \ apt-transport-h
         </div>
       </article>
       
+      <article>
+        <h2 class="subtitle is-6">February 18, 2017</h2>
+        <h1 class="title"><a href="https://theoseo.github.io/en/2017/02/connect-to-docker-containers/">Connect to Docker containers</a></h1>
+        
+        <div class="tags">
+    
+        <a class="button is-link" href="/en/tags/docker">Docker</a>
+    
+        <a class="button is-link" href="/en/tags/ubuntu">ubuntu</a>
+    
+</div>
+
+        
+        <div class="content">
+          While using docker, we ocasionally have to connect to another Docker container such as mysql. In this case, we have to use Docker --network flag.
+Although Docker provided --link flag before 1.9.0 version, this flag is a deprecated legacy feature according to Legacy container links.
+This document shows how to declare Docker network using --network flag.
+$ docker network create tikahost $ docker run -d -p 9998:9998 --name tika --network tikahost logicalspark/docker-tikaserver $ docker run --name daumlab -p 8888:8888 -v '/home/vagrant/Project/daum/scrapy:/home/jovyan/work' -d --network tikahost newsmine:latest  After declaring Docker network, containers can be connected using their Docker name.
+          
+          ...<a class="button is-link" href="https://theoseo.github.io/en/2017/02/connect-to-docker-containers/" style="height:28px">
+            Read more
+            <span class="icon is-small">
+              <i class="fa fa-angle-double-right"></i>
+            </span>
+          </a>
+          
+        </div>
+      </article>
+      
     </div>
   </section>
   <section class="section">
