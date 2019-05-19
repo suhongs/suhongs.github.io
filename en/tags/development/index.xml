@@ -16,7 +16,7 @@
       <pubDate>Sun, 19 May 2019 08:47:13 +0900</pubDate>
       
       <guid>https://theoseo.github.io/en/2019/05/nori-analyzer-and-elk-stack/</guid>
-      <description>Recently, Elasticsearch announced its Korean analyzer nori. I decided test it using docker compose.
+      <description>Recently, Elasticsearch announced its Korean analyzer nori. I test it using docker compose.
 Install Docker CE $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg-agent \ software-properties-common $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - $ sudo add-apt-repository \ &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) \ stable&amp;quot; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.io $ sudo usermod -aG docker $USER  Install Docker Compose $ sudo curl -L &amp;quot;https://github.</description>
     </item>
     

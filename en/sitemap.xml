@@ -39,23 +39,6 @@
   </url>
   
   <url>
-    <loc>https://theoseo.github.io/en/tags/development/</loc>
-    <lastmod>2019-05-19T08:47:13+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="https://theoseo.github.io/kr/tags/development/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://theoseo.github.io/en/tags/development/"
-                />
-  </url>
-  
-  <url>
     <loc>https://theoseo.github.io/en/categories/development/</loc>
     <lastmod>2019-05-19T08:47:13+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -69,6 +52,23 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://theoseo.github.io/en/categories/development/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/tags/development/</loc>
+    <lastmod>2019-05-19T08:47:13+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://theoseo.github.io/kr/tags/development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theoseo.github.io/en/tags/development/"
                 />
   </url>
   
