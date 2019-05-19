@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://theoseo.github.io/en/2019/05/nori-analyzer-and-elk-stack/</loc>
+    <lastmod>2019-05-19T08:47:13+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://theoseo.github.io/en/2017/02/connect-to-docker-containers/</loc>
     <lastmod>2017-02-18T22:11:48+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -32,8 +39,73 @@
   </url>
   
   <url>
+    <loc>https://theoseo.github.io/en/tags/development/</loc>
+    <lastmod>2019-05-19T08:47:13+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://theoseo.github.io/kr/tags/development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theoseo.github.io/en/tags/development/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/categories/development/</loc>
+    <lastmod>2019-05-19T08:47:13+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://theoseo.github.io/kr/categories/development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theoseo.github.io/en/categories/development/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/tags/docker/</loc>
+    <lastmod>2019-05-19T08:47:13+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://theoseo.github.io/kr/tags/docker/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theoseo.github.io/en/tags/docker/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/tags/elastic/</loc>
+    <lastmod>2019-05-19T08:47:13+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/tags/nori/</loc>
+    <lastmod>2019-05-19T08:47:13+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://theoseo.github.io/en/post/</loc>
-    <lastmod>2017-02-18T22:11:48+09:00</lastmod>
+    <lastmod>2019-05-19T08:47:13+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
@@ -66,6 +138,7 @@
   
   <url>
     <loc>https://theoseo.github.io/en/tags/</loc>
+    <lastmod>2019-05-19T08:47:13+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
@@ -82,7 +155,7 @@
   
   <url>
     <loc>https://theoseo.github.io/en/</loc>
-    <lastmod>2017-02-18T22:11:48+09:00</lastmod>
+    <lastmod>2019-05-19T08:47:13+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link

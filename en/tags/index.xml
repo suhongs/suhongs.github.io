@@ -5,9 +5,46 @@
     <link>https://theoseo.github.io/en/tags/</link>
     <description>Recent content in Tags on Theo&#39;s lab</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 19 May 2019 08:47:13 +0900</lastBuildDate>
     
 	<atom:link href="https://theoseo.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Development</title>
+      <link>https://theoseo.github.io/en/tags/development/</link>
+      <pubDate>Sun, 19 May 2019 08:47:13 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://theoseo.github.io/en/tags/docker/</link>
+      <pubDate>Sun, 19 May 2019 08:47:13 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elastic</title>
+      <link>https://theoseo.github.io/en/tags/elastic/</link>
+      <pubDate>Sun, 19 May 2019 08:47:13 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/tags/elastic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nori</title>
+      <link>https://theoseo.github.io/en/tags/nori/</link>
+      <pubDate>Sun, 19 May 2019 08:47:13 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/tags/nori/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

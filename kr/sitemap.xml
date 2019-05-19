@@ -72,6 +72,16 @@
     <lastmod>2018-07-30T08:31:47+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theoseo.github.io/en/categories/development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://theoseo.github.io/kr/categories/development/"
+                />
   </url>
   
   <url>
@@ -79,6 +89,16 @@
     <lastmod>2017-02-06T11:39:27+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theoseo.github.io/en/tags/development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://theoseo.github.io/kr/tags/development/"
+                />
   </url>
   
   <url>
@@ -86,6 +106,16 @@
     <lastmod>2017-02-06T11:39:27+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theoseo.github.io/en/tags/docker/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://theoseo.github.io/kr/tags/docker/"
+                />
   </url>
   
   <url>
