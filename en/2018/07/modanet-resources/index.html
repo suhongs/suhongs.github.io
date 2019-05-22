@@ -1,0 +1,163 @@
+<body>
+  <!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="" name="keywords">
+<meta content="Modanet Resources - Theo&#39;s lab" property="og:title">
+<title>Modanet Resources | Theo&#39;s lab</title>
+<link rel="stylesheet" href="https://theoseo.github.io/css/style.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+  <section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="/en/"><h1 class="title is-4">Theo&#39;s lab</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="nav-item" href="/kr/">
+            KR
+          </a>
+          
+          <a class="nav-item" href="/en/">
+            EN
+          </a>
+          
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="subtitle is-6">July 20, 2018</h2>
+      <h1 class="title">Modanet Resources</h1>
+      
+      <div class="tags">
+    
+        <a class="button is-link" href="/en/tags/deep-learning">Deep Learning</a>
+    
+        <a class="button is-link" href="/en/tags/dataset">Dataset</a>
+    
+</div>
+
+      
+      <div class="content">
+        
+
+<p>This is a short summary of <a href="https://arxiv.org/abs/1807.01394" target="_blank">Modanet paper</a> for a fashion item detection using Object Detector.</p>
+
+<h3 id="introduction">Introduction</h3>
+
+<p>Understanding fashion even in a single image remains an open problem.</p>
+
+<p>DeepFashion dataset are still too coarse to train a good model to localize and segment individual fashion items.</p>
+
+<p>ModaNet consisting of 55,176 high-quality, fully-annotated street fashion images on top of the 1 million weakly labeled images in the Paperdoll dataset.</p>
+
+<p>For the images that are fully-annotated, we have obtained pixel-level segmentation masks and polygons enclosing individual fashion items.</p>
+
+<p>We annotate 13 categories that are of the most interest in research and real-world commerce applications.</p>
+
+<h3 id="modanet-feature">Modanet Feature</h3>
+
+<ol>
+<li>10X larger compared to other fashion datasets with pixel-level annotations, thus providing more data to train a better model specialized in detection and segmentation.</li>
+<li>The annotated images are carefully selected to ensure diversity in human poses, i.e., not limited to the frontal view. In this way, training on this data grants a more generalizable model.</li>
+<li>Not only we provide pixel-level segmentation masks, but we also release coordinates of polygons enclosing individual fashion items. The polygons record the shape information of object boundary and serve as  an alternative way to segment objects.</li>
+</ol>
+
+<h3 id="related-work">Related Work</h3>
+
+<ul>
+<li>Detection
+RCNN, Fast RCNN, Faster RCNN, SSD, R-FCN, YOLO was used.</li>
+</ul>
+
+<p>DeepFashion used Fast R-CNN, but the model can only detect upper-body, lower-body and full-body objects due to the lack of fine-grained annotations.</p>
+
+<ul>
+<li>Segmentation
+One approach is FCN, the other is incorporate CRFs</li>
+</ul>
+
+<h2 id="the-modanet-dataset">The MODANET DATASET</h2>
+
+<p>Based on PaperDoll dataset, Faster RCNN that is pretrained on COCO dataset to detect if there is only one person present in the image.</p>
+
+<p>Among the initial set of selected images, we further manually select 2,000 images that are not suitable for annotations due to low image quality and 2,000 images that are high quality for annotation.  On these 4,000 images, we fine-tune the last layer of a ResNet-50 model pre-trained on ImageNet as a classifier for image quality.</p>
+
+<p>13 Categories
+[bag, belt, boots, footwear, outer, dress, sunglasses, pants, top, shorts, skirt, headwear, scarf&amp;tie]</p>
+
+<h2 id="modanet-applications">MODANET APPLICATIONS</h2>
+
+<h3 id="1-object-detection-for-fashion">1. Object Detection for Fashion</h3>
+
+<p>Given pixel-level and polygon annotations, we can easily infer bounding boxes from the polygon annotations as the boundary information is easily accessible.</p>
+
+<p>They split the whole dataset into training containing 53,377 images and validation set containing the remaning 2,799 images. The split encorces that each category from the validation set contains at least 500 instances so that the validation accuracy is reliable.</p>
+
+<ul>
+<li>Detectors.
+They choose three most popular detectors to evaluate their performance on the dataset, which are Faster RCNN with Inception-ResNet backbone, SSD with Inception V2 backbone, and YOLO with YOLO v2.</li>
+</ul>
+
+      </div>
+    </div>
+  </section>
+  
+<section class="section">
+  <div class="container">
+    <aside><div id="disqus_thread"></div></aside>
+    <script type="text/javascript">
+      var disqus_shortname = 'suhongs';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+  <section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-43044462-6', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</body>

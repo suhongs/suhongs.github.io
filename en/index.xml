@@ -21,6 +21,30 @@ Install Docker CE $ sudo apt-get update $ sudo apt-get install \ apt-transport-h
     </item>
     
     <item>
+      <title>Install and execute Openpose on Jetson Tx2 </title>
+      <link>https://theoseo.github.io/en/2019/03/install-and-execute-openpose-on-jetson-tx2/</link>
+      <pubDate>Wed, 20 Mar 2019 11:51:08 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/2019/03/install-and-execute-openpose-on-jetson-tx2/</guid>
+      <description>Install Jetpack 3.3 on Jetson Tx2 There&amp;rsquo;s a lot of resources to do. I used this link. The post used Virtual box and virtual box extension.
+Install OpenPose To use jetson tx2 onboard camera, it is necessary to install opencv3.4. First, I removed prior version of opencv according to this article.
+$ sudo apt-get purge libopencv* $ sudo apt-get purge python-numpy  I used shell script to install opencv 3.</description>
+    </item>
+    
+    <item>
+      <title>Modanet Resources</title>
+      <link>https://theoseo.github.io/en/2018/07/modanet-resources/</link>
+      <pubDate>Fri, 20 Jul 2018 10:18:04 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/2018/07/modanet-resources/</guid>
+      <description>This is a short summary of Modanet paper for a fashion item detection using Object Detector.
+Introduction Understanding fashion even in a single image remains an open problem.
+DeepFashion dataset are still too coarse to train a good model to localize and segment individual fashion items.
+ModaNet consisting of 55,176 high-quality, fully-annotated street fashion images on top of the 1 million weakly labeled images in the Paperdoll dataset.
+For the images that are fully-annotated, we have obtained pixel-level segmentation masks and polygons enclosing individual fashion items.</description>
+    </item>
+    
+    <item>
       <title>Connect to Docker containers</title>
       <link>https://theoseo.github.io/en/2017/02/connect-to-docker-containers/</link>
       <pubDate>Sat, 18 Feb 2017 22:11:48 +0900</pubDate>
@@ -30,15 +54,6 @@ Install Docker CE $ sudo apt-get update $ sudo apt-get install \ apt-transport-h
 Although Docker provided --link flag before 1.9.0 version, this flag is a deprecated legacy feature according to Legacy container links.
 This document shows how to declare Docker network using --network flag.
 $ docker network create tikahost $ docker run -d -p 9998:9998 --name tika --network tikahost logicalspark/docker-tikaserver $ docker run --name daumlab -p 8888:8888 -v &#39;/home/vagrant/Project/daum/scrapy:/home/jovyan/work&#39; -d --network tikahost newsmine:latest  After declaring Docker network, containers can be connected using their Docker name.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://theoseo.github.io/en/1/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://theoseo.github.io/en/1/01/</guid>
-      <description></description>
     </item>
     
   </channel>

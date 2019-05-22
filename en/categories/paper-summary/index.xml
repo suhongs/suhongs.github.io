@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paper Summary on Theo&#39;s lab</title>
+    <link>https://theoseo.github.io/en/categories/paper-summary/</link>
+    <description>Recent content in Paper Summary on Theo&#39;s lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 20 Jul 2018 10:18:04 +0900</lastBuildDate>
+    
+	<atom:link href="https://theoseo.github.io/en/categories/paper-summary/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Modanet Resources</title>
+      <link>https://theoseo.github.io/en/2018/07/modanet-resources/</link>
+      <pubDate>Fri, 20 Jul 2018 10:18:04 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/2018/07/modanet-resources/</guid>
+      <description>This is a short summary of Modanet paper for a fashion item detection using Object Detector.
+Introduction Understanding fashion even in a single image remains an open problem.
+DeepFashion dataset are still too coarse to train a good model to localize and segment individual fashion items.
+ModaNet consisting of 55,176 high-quality, fully-annotated street fashion images on top of the 1 million weakly labeled images in the Paperdoll dataset.
+For the images that are fully-annotated, we have obtained pixel-level segmentation masks and polygons enclosing individual fashion items.</description>
+    </item>
+    
+  </channel>
+</rss>

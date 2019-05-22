@@ -5,9 +5,28 @@
     <link>https://theoseo.github.io/en/series/</link>
     <description>Recent content in Series on Theo&#39;s lab</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 20 Jul 2018 10:18:04 +0900</lastBuildDate>
     
 	<atom:link href="https://theoseo.github.io/en/series/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fashion Detection</title>
+      <link>https://theoseo.github.io/en/series/fashion-detection/</link>
+      <pubDate>Fri, 20 Jul 2018 10:18:04 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/series/fashion-detection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Openpose</title>
+      <link>https://theoseo.github.io/en/series/openpose/</link>
+      <pubDate>Wed, 20 Mar 2019 11:51:08 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/series/openpose/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

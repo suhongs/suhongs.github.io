@@ -18,5 +18,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Install</title>
+      <link>https://theoseo.github.io/en/categories/install/</link>
+      <pubDate>Wed, 20 Mar 2019 11:51:08 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/categories/install/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paper Summary</title>
+      <link>https://theoseo.github.io/en/categories/paper-summary/</link>
+      <pubDate>Fri, 20 Jul 2018 10:18:04 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/categories/paper-summary/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
