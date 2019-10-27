@@ -1,0 +1,83 @@
+import numpy as np
+from google.cloud import storage
+from PIL import Image
+
+
+def download_blob(bucket_name, source_blob_name, destination_file_name):
+    """Downloads a blob from the bucket."""
+    storage_client = storage.Client()
+    bucket = storage_client.get_bucket(bucket_name)
+    blob = bucket.blob(source_blob_name)
+
+    blob.download_to_filename(destination_file_name)
+
+    print('Blob {} downloaded to {}.'.format(
+        source_blob_name,
+        destination_file_name))
+
+def sigmoid(x, derivative=False):
+    return x*(1-x) if derivative else 1/(1+np.exp(-x))
+
+def handler(request):
+    """Responds to any HTTP request.
+    Args:
+        request (flask.Request): HTTP request object.
+    Returns:
+        The response text or any set of values that can be turned into a
+        Response object using
+        `make_response <http://flask.pocoo.org/docs/1.0/api/#flask.Flask.make_response>`.
+    """
+    
+    label=['BoardShorts',
+    'ButtonUpShirts',
+    'Crew',
+    'Denim',
+    'FloralPrint',
+    'GraphicPrint',
+    'Halter',
+    'Hood',
+    'HorizontalStripes',
+    'Insulated',
+    'Leggings',
+    'LongSleeves',
+    'Mesh',
+    'Plaid',
+    'Polos',
+    'Scoop',
+    'ShortSleeves',
+    'Sleeveless',
+    'SnowPants',
+    'Stripes',
+    'VerticalStripes',
+    'Vests',
+    'Vneck',
+    'Zipper',
+    'halfZip',
+    'quarter3Zip',
+    'quarterZip']    
+    
+    download_blob('gs://urban-serving', 'data/p8675251_s3495745_v0.jpg', '/tmp/test.jpg')
+    image = Image.open('/tmp/test.jpg')
+    img_resized = np.asarray(image.resize(size=(224, 224)), dtype=np.float32)
+    img_resized = (img_resized/127.5) - 1
+
+    payload = {
+        "instances": [{'input_image': img_resized.tolist()}]
+    }
+    r = requests.post('http://34.97.79.143:8501/v1/models/mobilev2:predict', json=payload)
+
+    result = json.loads(r.content)
+	np_result = np.asarray(result['predictions'])
+    
+    result_sig = sigmoid(np_result[0,:])
+
+    indexes = np.where(result_sig> 0.5)
+    #attr=pd.Series(label)
+    #attr.iloc[indexes]0
+    result_set = []
+    for i in list(indexes[0]):
+        result_set.append(label[i])
+        
+    print(reulst_set)
+    
+    return result_set
