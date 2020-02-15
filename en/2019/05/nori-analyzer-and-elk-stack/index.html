@@ -55,58 +55,39 @@
 
       
       <div class="content">
-        
-
-<p>Recently, Elasticsearch announced its Korean analyzer nori. I test it using docker compose.</p>
-
-<h3 id="install-docker-ce-https-docs-docker-com-install-linux-docker-ce-ubuntu"><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/" target="_blank">Install Docker CE</a></h3>
-
-<pre><code class="language-bash">$ sudo apt-get update
-$ sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg-agent \
-    software-properties-common
+        <p>Recently, Elasticsearch announced its Korean analyzer nori. I test it using docker compose.</p>
+<h3 id="install-docker-cehttpsdocsdockercominstalllinuxdocker-ceubuntu"><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">Install Docker CE</a></h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get update
+$ sudo apt-get install <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    apt-transport-https <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    ca-certificates <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    curl <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    gnupg-agent <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    software-properties-common
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-$ sudo add-apt-repository \
-   &quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable&quot;    
+$ sudo add-apt-repository <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>   <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+</span><span style="color:#e6db74">   </span><span style="color:#66d9ef">$(</span>lsb_release -cs<span style="color:#66d9ef">)</span><span style="color:#e6db74"> \
+</span><span style="color:#e6db74">   stable</span><span style="color:#e6db74">&#34;</span>    
 $ sudo apt-get update
 $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 $ sudo usermod -aG docker $USER
-</code></pre>
-
-<h3 id="install-docker-compose-https-docs-docker-com-compose-install"><a href="https://docs.docker.com/compose/install/" target="_blank">Install Docker Compose</a></h3>
-
-<pre><code class="language-bash">$ sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+</code></pre></div><h3 id="install-docker-composehttpsdocsdockercomcomposeinstall"><a href="https://docs.docker.com/compose/install/">Install Docker Compose</a></h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo curl -L <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">https://github.com/docker/compose/releases/download/1.24.0/docker-compose-</span><span style="color:#66d9ef">$(</span>uname -s<span style="color:#66d9ef">)</span><span style="color:#e6db74">-</span><span style="color:#66d9ef">$(</span>uname -m<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> -o /usr/local/bin/docker-compose
 $ sudo chmod +x /usr/local/bin/docker-compose
 $ docker-compose --version
-</code></pre>
-
-<h3 id="get-stack-docker">Get Stack Docker</h3>
-
-<p>Elastic search provide example stack docker its <a href="https://github.com/elastic/stack-docker" target="_blank">github</a>.</p>
-
-<pre><code class="language-bash">$ git clone https://github.com/elastic/stack-docker
+</code></pre></div><h3 id="get-stack-docker">Get Stack Docker</h3>
+<p>Elastic search provide example stack docker its <a href="https://github.com/elastic/stack-docker">github</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git clone https://github.com/elastic/stack-docker
 $ cd stack-docker
-$ sysctl -w vm.max_map_count=262144
+$ sysctl -w vm.max_map_count<span style="color:#f92672">=</span><span style="color:#ae81ff">262144</span>
 $ docker-compose -f setup.yml up
-</code></pre>
-
-<p>You can change install version using <code>TAG</code> and <code>ELASTIC_VERSION</code> variables in <code>.env</code> file. However, I failed to install <code>7.0.1</code> at this moment(2019-05-19). Due to change of <code>docker-entrypoint.sh</code> file. You are able to check the <a href="https://github.com/elastic/dockerfiles/commit/2642f111f8aea65a8cd543d06f2698736c2193a7#diff-fbc61aa6cac7df1fb1be0a625636bbbaL78" target="_blank">difference</a> between prior version and currenct version.</p>
-
+</code></pre></div><p>You can change install version using <code>TAG</code> and <code>ELASTIC_VERSION</code> variables in <code>.env</code> file. However, I failed to install <code>7.0.1</code> at this moment(2019-05-19). Due to change of <code>docker-entrypoint.sh</code> file. You are able to check the <a href="https://github.com/elastic/dockerfiles/commit/2642f111f8aea65a8cd543d06f2698736c2193a7#diff-fbc61aa6cac7df1fb1be0a625636bbbaL78">difference</a> between prior version and currenct version.</p>
 <p>For this reason, I installed Elasticsearch 6.6.0. After finishing the install, we are able to start elastic stacks using <code>docker-compose up -d</code>. When you want to stop or restart elastic stacks, you should use <code>docker-compose stop</code> or <code>docker-compose restart</code>. Every Docker compose commands should be executed in the <code>stack-docker</code> folder.</p>
-
 <h3 id="install-nori-korean-analyzer-plugin">Install Nori Korean analyzer plugin</h3>
-
-<p>Elastic introduced basic usage its <a href="https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html" target="_blank">Analysis Plugins page</a>.</p>
-
-<pre><code class="language-bash">$ sudo bin/elasticsearch-plugin install analysis-nori
-</code></pre>
-
-<p>After install the plugin, I tested some examples followed by its <a href="https://www.elastic.co/kr/webinars/nori-elasticsearch-korean-text-analyzer" target="_blank">webinar</a></p>
+<p>Elastic introduced basic usage its <a href="https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html">Analysis Plugins page</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo bin/elasticsearch-plugin install analysis-nori
+</code></pre></div><p>After install the plugin, I tested some examples followed by its <a href="https://www.elastic.co/kr/webinars/nori-elasticsearch-korean-text-analyzer">webinar</a></p>
 
       </div>
     </div>

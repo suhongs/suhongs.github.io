@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scrapy on Theo&#39;s lab</title>
+    <title>scrapy on Theo&#39;s lab</title>
     <link>https://theoseo.github.io/kr/tags/scrapy/</link>
-    <description>Recent content in Scrapy on Theo&#39;s lab</description>
+    <description>Recent content in scrapy on Theo&#39;s lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 07 Feb 2017 10:00:12 +0900</lastBuildDate>
     
@@ -18,7 +18,7 @@
       <guid>https://theoseo.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
       <description>본 문서는 Scrapy 공식 문서의 Installing Scrapy를 참고 했습니다. 해당 문서에 따르면 Scrapy는 Ubuntu 12.04 이상을 지원하고 있습니다. 또한 Ubuntu에서 자체 지원하는 python-scrapy는 Scrapy의 최신 버전과는 성능등의 측면에서 사용하지 말것을 권고하고 있습니다. 아래의 작업은 Ubuntu 16.04.1 LTS 에서 실행 됐습니다.
 관련 패키지 설치 Scrapy를 설치하기 전에 실행하기 위해 필요한 연관 패키지들을 아래의 명령으로 설치합니다.
-sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev  Scrapy를 Python3로 활용하고 싶을 경우에는 아래의 명령으로 필요한 패키지를 먼저 설치합니다.</description>
+sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev Scrapy를 Python3로 활용하고 싶을 경우에는 아래의 명령으로 필요한 패키지를 먼저 설치합니다.</description>
     </item>
     
   </channel>

@@ -1,17 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Theo&#39;s lab</title>
     <link>https://theoseo.github.io/kr/tags/</link>
     <description>Recent content in Tags on Theo&#39;s lab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 30 Jul 2018 08:31:47 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2019 17:41:38 +0900</lastBuildDate>
     
 	<atom:link href="https://theoseo.github.io/kr/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Aws</title>
+      <title>Development</title>
+      <link>https://theoseo.github.io/kr/tags/development/</link>
+      <pubDate>Fri, 06 Dec 2019 17:41:38 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/kr/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://theoseo.github.io/kr/tags/docker/</link>
+      <pubDate>Fri, 06 Dec 2019 17:41:38 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/kr/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Cloud</title>
+      <link>https://theoseo.github.io/kr/tags/google-cloud/</link>
+      <pubDate>Fri, 06 Dec 2019 17:41:38 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/kr/tags/google-cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TensorFlow</title>
+      <link>https://theoseo.github.io/kr/tags/tensorflow/</link>
+      <pubDate>Fri, 06 Dec 2019 17:41:38 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/kr/tags/tensorflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
       <link>https://theoseo.github.io/kr/tags/aws/</link>
       <pubDate>Mon, 30 Jul 2018 08:31:47 +0900</pubDate>
       
@@ -29,74 +65,11 @@
     </item>
     
     <item>
-      <title>Deep Reinforcement Learning</title>
-      <link>https://theoseo.github.io/kr/tags/deep-reinforcement-learning/</link>
-      <pubDate>Mon, 14 Aug 2017 10:29:45 +0900</pubDate>
-      
-      <guid>https://theoseo.github.io/kr/tags/deep-reinforcement-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Development</title>
-      <link>https://theoseo.github.io/kr/tags/development/</link>
-      <pubDate>Mon, 06 Feb 2017 11:39:27 +0900</pubDate>
-      
-      <guid>https://theoseo.github.io/kr/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://theoseo.github.io/kr/tags/docker/</link>
-      <pubDate>Mon, 06 Feb 2017 11:39:27 +0900</pubDate>
-      
-      <guid>https://theoseo.github.io/kr/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gcp</title>
+      <title>GCP</title>
       <link>https://theoseo.github.io/kr/tags/gcp/</link>
       <pubDate>Mon, 30 Jul 2018 08:31:47 +0900</pubDate>
       
       <guid>https://theoseo.github.io/kr/tags/gcp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Google Cloud</title>
-      <link>https://theoseo.github.io/kr/tags/google-cloud/</link>
-      <pubDate>Mon, 06 Feb 2017 11:39:27 +0900</pubDate>
-      
-      <guid>https://theoseo.github.io/kr/tags/google-cloud/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rl</title>
-      <link>https://theoseo.github.io/kr/tags/rl/</link>
-      <pubDate>Mon, 14 Aug 2017 10:29:45 +0900</pubDate>
-      
-      <guid>https://theoseo.github.io/kr/tags/rl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scrapy</title>
-      <link>https://theoseo.github.io/kr/tags/scrapy/</link>
-      <pubDate>Tue, 07 Feb 2017 10:00:12 +0900</pubDate>
-      
-      <guid>https://theoseo.github.io/kr/tags/scrapy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ubuntu</title>
-      <link>https://theoseo.github.io/kr/tags/ubuntu/</link>
-      <pubDate>Tue, 07 Feb 2017 10:00:12 +0900</pubDate>
-      
-      <guid>https://theoseo.github.io/kr/tags/ubuntu/</guid>
       <description></description>
     </item>
     
@@ -106,6 +79,42 @@
       <pubDate>Mon, 30 Jul 2018 08:31:47 +0900</pubDate>
       
       <guid>https://theoseo.github.io/kr/tags/v100/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Reinforcement Learning</title>
+      <link>https://theoseo.github.io/kr/tags/deep-reinforcement-learning/</link>
+      <pubDate>Mon, 14 Aug 2017 10:29:45 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/kr/tags/deep-reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RL</title>
+      <link>https://theoseo.github.io/kr/tags/rl/</link>
+      <pubDate>Mon, 14 Aug 2017 10:29:45 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/kr/tags/rl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scrapy</title>
+      <link>https://theoseo.github.io/kr/tags/scrapy/</link>
+      <pubDate>Tue, 07 Feb 2017 10:00:12 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/kr/tags/scrapy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>https://theoseo.github.io/kr/tags/ubuntu/</link>
+      <pubDate>Tue, 07 Feb 2017 10:00:12 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/kr/tags/ubuntu/</guid>
       <description></description>
     </item>
     

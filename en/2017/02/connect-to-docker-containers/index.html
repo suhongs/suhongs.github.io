@@ -52,21 +52,14 @@
       
       <div class="content">
         <p>While using docker, we ocasionally have to connect to another Docker container such as mysql. In this case, we have to use Docker <code>--network</code> flag.</p>
-
-<p>Although Docker provided <code>--link</code> flag before 1.9.0 version, this flag is a deprecated legacy feature according to <a href="https://docs.docker.com/engine/userguide/networking/default_network/dockerlinks/" target="_blank">Legacy container links</a>.</p>
-
+<p>Although Docker provided <code>--link</code> flag before 1.9.0 version, this flag is a deprecated legacy feature according to <a href="https://docs.docker.com/engine/userguide/networking/default_network/dockerlinks/">Legacy container links</a>.</p>
 <p>This document shows how to declare Docker network using <code>--network</code> flag.</p>
-
-<pre><code class="language-bash">$ docker network create tikahost
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker network create tikahost
 $ docker run -d -p 9998:9998 --name tika --network tikahost logicalspark/docker-tikaserver
-$ docker run --name daumlab -p 8888:8888 -v '/home/vagrant/Project/daum/scrapy:/home/jovyan/work' -d --network tikahost newsmine:latest
-</code></pre>
-
-<p>After declaring Docker network, containers can be connected using their Docker name. If you want to connect existing container to the network, you can use <code>docker network connect</code> commands.</p>
-
-<pre><code class="language-bash">$ docker network connect tikahost container
-</code></pre>
-
+$ docker run --name daumlab -p 8888:8888 -v <span style="color:#e6db74">&#39;/home/vagrant/Project/daum/scrapy:/home/jovyan/work&#39;</span> -d --network tikahost newsmine:latest
+</code></pre></div><p>After declaring Docker network, containers can be connected using their Docker name. If you want to connect existing container to the network, you can use <code>docker network connect</code> commands.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ docker network connect tikahost container
+</code></pre></div>
       </div>
     </div>
   </section>

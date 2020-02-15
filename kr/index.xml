@@ -1,14 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Theo&#39;s lab</title>
     <link>https://theoseo.github.io/kr/</link>
     <description>Recent content on Theo&#39;s lab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 30 Jul 2018 08:31:47 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2019 17:41:38 +0900</lastBuildDate>
     
 	<atom:link href="https://theoseo.github.io/kr/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TensorFlow Serving을 Cloud Run로 서비스 하기</title>
+      <link>https://theoseo.github.io/kr/2019/12/tensorflow-serving%EC%9D%84-cloud-run%EB%A1%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Fri, 06 Dec 2019 17:41:38 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/kr/2019/12/tensorflow-serving%EC%9D%84-cloud-run%EB%A1%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%ED%95%98%EA%B8%B0/</guid>
+      <description>TensorFlow Serving을 Cloud Run으로 서비스하기 위해 TensorFlow Serving에서 공식적으로 제공하는 Dockerfile에 대한 수정으로 Cloud Run에 Deploy 가능 하도록 함.
+예제 및 간단한 설명
+REST API 용 PORT 수정  TensorFlow Serving은 REST API와 gRPC로 서비스가 가능하고 각각 8501, 8500 포트를 사용함. Cloud Run은 기본적으로 8080 포트로 서비스 되며 사용자가 임의로 바꿀 수 없어 Docker의 환경 변수로 입력 받도록 세팅해야함.  # RESTEXPOSE${PORT}# Create a script that runs the model server so we can use environment variables# while also passing in arguments from the docker command lineRUN echo &amp;#39;#!</description>
+    </item>
     
     <item>
       <title>AWS와 GCP간의 Tesla V100 GPU 인스턴스 가격 비교</title>
@@ -38,7 +49,7 @@
       <guid>https://theoseo.github.io/kr/2017/02/ubuntu%EC%97%90-scrapy-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</guid>
       <description>본 문서는 Scrapy 공식 문서의 Installing Scrapy를 참고 했습니다. 해당 문서에 따르면 Scrapy는 Ubuntu 12.04 이상을 지원하고 있습니다. 또한 Ubuntu에서 자체 지원하는 python-scrapy는 Scrapy의 최신 버전과는 성능등의 측면에서 사용하지 말것을 권고하고 있습니다. 아래의 작업은 Ubuntu 16.04.1 LTS 에서 실행 됐습니다.
 관련 패키지 설치 Scrapy를 설치하기 전에 실행하기 위해 필요한 연관 패키지들을 아래의 명령으로 설치합니다.
-sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev  Scrapy를 Python3로 활용하고 싶을 경우에는 아래의 명령으로 필요한 패키지를 먼저 설치합니다.</description>
+sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev Scrapy를 Python3로 활용하고 싶을 경우에는 아래의 명령으로 필요한 패키지를 먼저 설치합니다.</description>
     </item>
     
     <item>
@@ -48,8 +59,8 @@ sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev l
       
       <guid>https://theoseo.github.io/kr/2017/02/%EA%B5%AC%EA%B8%80-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%97%90%EC%84%9C-docker-%EB%B9%8C%EB%93%9C%ED%95%98%EA%B8%B0/</guid>
       <description>Docker 설치하기 구글클라우드 Compute Engine에서 Ubuntu 16.04 LTS 인스턴스 런치 후 SSH로 접속 후 아래의 명령어로 도커를 설치한다.
-$ sudo apt-get update $ sudo apt-get install docker.io $ sudo usermod -aG docker $USER  Dockerfile 빌드하기 원하는 시스템 설정의 Dockerfile을 작성하거나 다운 받는다. 본 예제의 경우 Newsmine 프로젝트의 Dockerfile을 Git 허브로 부터 직접 다운 받는다. Dockerfile이 존재하는 디렉토리에서 아래의 명령을 실행하면 Docker 빌드가 시작된다.
-$ sudo docker build --tag newsmine:latest .</description>
+$ sudo apt-get update $ sudo apt-get install docker.io $ sudo usermod -aG docker $USER Dockerfile 빌드하기 원하는 시스템 설정의 Dockerfile을 작성하거나 다운 받는다. 본 예제의 경우 Newsmine 프로젝트의 Dockerfile을 Git 허브로 부터 직접 다운 받는다. Dockerfile이 존재하는 디렉토리에서 아래의 명령을 실행하면 Docker 빌드가 시작된다.
+$ sudo docker build --tag newsmine:latest . Build 명령을 실행하면 Dockerfile에서 요구하는 패키지들을 다운받고 필요한 설치 명령이 수행된다.</description>
     </item>
     
   </channel>

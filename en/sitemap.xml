@@ -1,46 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://theoseo.github.io/en/2019/05/nori-analyzer-and-elk-stack/</loc>
+    <loc>https://theoseo.github.io/en/categories/</loc>
     <lastmod>2019-05-19T08:47:13+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://theoseo.github.io/en/2019/03/install-and-execute-openpose-on-jetson-tx2/</loc>
-    <lastmod>2019-03-20T11:51:08+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://theoseo.github.io/en/2018/07/modanet-resources/</loc>
-    <lastmod>2018-07-20T10:18:04+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://theoseo.github.io/en/2017/02/connect-to-docker-containers/</loc>
-    <lastmod>2017-02-18T22:11:48+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://theoseo.github.io/en/tags/camera/</loc>
-    <lastmod>2019-03-20T11:51:08+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://theoseo.github.io/en/categories/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="kr"
@@ -54,41 +20,10 @@
   </url>
   
   <url>
-    <loc>https://theoseo.github.io/en/tags/dataset/</loc>
-    <lastmod>2018-07-20T10:18:04+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://theoseo.github.io/en/tags/deep-learning/</loc>
-    <lastmod>2018-07-20T10:18:04+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://theoseo.github.io/en/categories/development/</loc>
-    <lastmod>2019-05-19T08:47:13+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="https://theoseo.github.io/kr/categories/development/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://theoseo.github.io/en/categories/development/"
-                />
-  </url>
-  
-  <url>
     <loc>https://theoseo.github.io/en/tags/development/</loc>
     <lastmod>2019-05-19T08:47:13+09:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="kr"
@@ -102,10 +37,27 @@
   </url>
   
   <url>
+    <loc>https://theoseo.github.io/en/categories/development/</loc>
+    <lastmod>2019-05-19T08:47:13+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://theoseo.github.io/kr/categories/development/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theoseo.github.io/en/categories/development/"
+                />
+  </url>
+  
+  <url>
     <loc>https://theoseo.github.io/en/tags/docker/</loc>
     <lastmod>2019-05-19T08:47:13+09:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="kr"
@@ -122,63 +74,28 @@
     <loc>https://theoseo.github.io/en/tags/elastic/</loc>
     <lastmod>2019-05-19T08:47:13+09:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://theoseo.github.io/en/series/fashion-detection/</loc>
-    <lastmod>2018-07-20T10:18:04+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://theoseo.github.io/en/categories/install/</loc>
-    <lastmod>2019-03-20T11:51:08+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://theoseo.github.io/en/tags/jetson-tx2/</loc>
-    <lastmod>2019-03-20T11:51:08+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://theoseo.github.io/en/tags/nori/</loc>
     <lastmod>2019-05-19T08:47:13+09:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://theoseo.github.io/en/tags/openpose/</loc>
-    <lastmod>2019-03-20T11:51:08+09:00</lastmod>
+    <loc>https://theoseo.github.io/en/2019/05/nori-analyzer-and-elk-stack/</loc>
+    <lastmod>2019-05-19T08:47:13+09:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://theoseo.github.io/en/series/openpose/</loc>
-    <lastmod>2019-03-20T11:51:08+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://theoseo.github.io/en/categories/paper-summary/</loc>
-    <lastmod>2018-07-20T10:18:04+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://theoseo.github.io/en/post/</loc>
     <lastmod>2019-05-19T08:47:13+09:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="kr"
@@ -192,27 +109,10 @@
   </url>
   
   <url>
-    <loc>https://theoseo.github.io/en/series/</loc>
-    <lastmod>2018-07-20T10:18:04+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kr"
-                href="https://theoseo.github.io/kr/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://theoseo.github.io/en/series/"
-                />
-  </url>
-  
-  <url>
     <loc>https://theoseo.github.io/en/tags/</loc>
-    <lastmod>2019-03-20T11:51:08+09:00</lastmod>
+    <lastmod>2019-05-19T08:47:13+09:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="kr"
@@ -229,7 +129,7 @@
     <loc>https://theoseo.github.io/en/</loc>
     <lastmod>2019-05-19T08:47:13+09:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="kr"
@@ -243,10 +143,111 @@
   </url>
   
   <url>
+    <loc>https://theoseo.github.io/en/tags/camera/</loc>
+    <lastmod>2019-03-20T11:51:08+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/categories/install/</loc>
+    <lastmod>2019-03-20T11:51:08+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/2019/03/install-and-execute-openpose-on-jetson-tx2/</loc>
+    <lastmod>2019-03-20T11:51:08+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/tags/jetson-tx2/</loc>
+    <lastmod>2019-03-20T11:51:08+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/series/openpose/</loc>
+    <lastmod>2019-03-20T11:51:08+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/tags/openpose/</loc>
+    <lastmod>2019-03-20T11:51:08+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/series/</loc>
+    <lastmod>2019-03-20T11:51:08+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kr"
+                href="https://theoseo.github.io/kr/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theoseo.github.io/en/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/tags/dataset/</loc>
+    <lastmod>2018-07-20T10:18:04+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/tags/deep-learning/</loc>
+    <lastmod>2018-07-20T10:18:04+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/series/fashion-detection/</loc>
+    <lastmod>2018-07-20T10:18:04+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/2018/07/modanet-resources/</loc>
+    <lastmod>2018-07-20T10:18:04+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/categories/paper-summary/</loc>
+    <lastmod>2018-07-20T10:18:04+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://theoseo.github.io/en/2017/02/connect-to-docker-containers/</loc>
+    <lastmod>2017-02-18T22:11:48+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://theoseo.github.io/en/tags/ubuntu/</loc>
     <lastmod>2017-02-18T22:11:48+09:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0</priority>
+    <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="kr"

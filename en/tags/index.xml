@@ -1,41 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Theo&#39;s lab</title>
     <link>https://theoseo.github.io/en/tags/</link>
     <description>Recent content in Tags on Theo&#39;s lab</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 20 Mar 2019 11:51:08 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 19 May 2019 08:47:13 +0900</lastBuildDate>
     
 	<atom:link href="https://theoseo.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Camera</title>
-      <link>https://theoseo.github.io/en/tags/camera/</link>
-      <pubDate>Wed, 20 Mar 2019 11:51:08 +0900</pubDate>
-      
-      <guid>https://theoseo.github.io/en/tags/camera/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dataset</title>
-      <link>https://theoseo.github.io/en/tags/dataset/</link>
-      <pubDate>Fri, 20 Jul 2018 10:18:04 +0900</pubDate>
-      
-      <guid>https://theoseo.github.io/en/tags/dataset/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deep Learning</title>
-      <link>https://theoseo.github.io/en/tags/deep-learning/</link>
-      <pubDate>Fri, 20 Jul 2018 10:18:04 +0900</pubDate>
-      
-      <guid>https://theoseo.github.io/en/tags/deep-learning/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Development</title>
@@ -65,20 +38,29 @@
     </item>
     
     <item>
-      <title>Jetson Tx2</title>
-      <link>https://theoseo.github.io/en/tags/jetson-tx2/</link>
-      <pubDate>Wed, 20 Mar 2019 11:51:08 +0900</pubDate>
-      
-      <guid>https://theoseo.github.io/en/tags/jetson-tx2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Nori</title>
       <link>https://theoseo.github.io/en/tags/nori/</link>
       <pubDate>Sun, 19 May 2019 08:47:13 +0900</pubDate>
       
       <guid>https://theoseo.github.io/en/tags/nori/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>camera</title>
+      <link>https://theoseo.github.io/en/tags/camera/</link>
+      <pubDate>Wed, 20 Mar 2019 11:51:08 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/tags/camera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jetson Tx2</title>
+      <link>https://theoseo.github.io/en/tags/jetson-tx2/</link>
+      <pubDate>Wed, 20 Mar 2019 11:51:08 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/tags/jetson-tx2/</guid>
       <description></description>
     </item>
     
@@ -92,7 +74,25 @@
     </item>
     
     <item>
-      <title>Ubuntu</title>
+      <title>Dataset</title>
+      <link>https://theoseo.github.io/en/tags/dataset/</link>
+      <pubDate>Fri, 20 Jul 2018 10:18:04 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/tags/dataset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>https://theoseo.github.io/en/tags/deep-learning/</link>
+      <pubDate>Fri, 20 Jul 2018 10:18:04 +0900</pubDate>
+      
+      <guid>https://theoseo.github.io/en/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
       <link>https://theoseo.github.io/en/tags/ubuntu/</link>
       <pubDate>Sat, 18 Feb 2017 22:11:48 +0900</pubDate>
       

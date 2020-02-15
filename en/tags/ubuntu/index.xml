@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ubuntu on Theo&#39;s lab</title>
+    <title>ubuntu on Theo&#39;s lab</title>
     <link>https://theoseo.github.io/en/tags/ubuntu/</link>
-    <description>Recent content in Ubuntu on Theo&#39;s lab</description>
+    <description>Recent content in ubuntu on Theo&#39;s lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 18 Feb 2017 22:11:48 +0900</lastBuildDate>
     
@@ -19,7 +19,7 @@
       <description>While using docker, we ocasionally have to connect to another Docker container such as mysql. In this case, we have to use Docker --network flag.
 Although Docker provided --link flag before 1.9.0 version, this flag is a deprecated legacy feature according to Legacy container links.
 This document shows how to declare Docker network using --network flag.
-$ docker network create tikahost $ docker run -d -p 9998:9998 --name tika --network tikahost logicalspark/docker-tikaserver $ docker run --name daumlab -p 8888:8888 -v &#39;/home/vagrant/Project/daum/scrapy:/home/jovyan/work&#39; -d --network tikahost newsmine:latest  After declaring Docker network, containers can be connected using their Docker name.</description>
+$ docker network create tikahost $ docker run -d -p 9998:9998 --name tika --network tikahost logicalspark/docker-tikaserver $ docker run --name daumlab -p 8888:8888 -v &amp;#39;/home/vagrant/Project/daum/scrapy:/home/jovyan/work&amp;#39; -d --network tikahost newsmine:latest After declaring Docker network, containers can be connected using their Docker name.</description>
     </item>
     
   </channel>

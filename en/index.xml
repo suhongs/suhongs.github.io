@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Theo&#39;s lab</title>
@@ -17,7 +17,7 @@
       
       <guid>https://theoseo.github.io/en/2019/05/nori-analyzer-and-elk-stack/</guid>
       <description>Recently, Elasticsearch announced its Korean analyzer nori. I test it using docker compose.
-Install Docker CE $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg-agent \ software-properties-common $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - $ sudo add-apt-repository \ &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) \ stable&amp;quot; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.io $ sudo usermod -aG docker $USER  Install Docker Compose $ sudo curl -L &amp;quot;https://github.</description>
+Install Docker CE $ sudo apt-get update $ sudo apt-get install \  apt-transport-https \  ca-certificates \  curl \  gnupg-agent \  software-properties-common $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - $ sudo add-apt-repository \  &amp;#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs)\ stable&amp;#34; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.</description>
     </item>
     
     <item>
@@ -26,9 +26,9 @@ Install Docker CE $ sudo apt-get update $ sudo apt-get install \ apt-transport-h
       <pubDate>Wed, 20 Mar 2019 11:51:08 +0900</pubDate>
       
       <guid>https://theoseo.github.io/en/2019/03/install-and-execute-openpose-on-jetson-tx2/</guid>
-      <description>Install Jetpack 3.3 on Jetson Tx2 There&amp;rsquo;s a lot of resources to do. I used this link. The post used Virtual box and virtual box extension.
+      <description>Install Jetpack 3.3 on Jetson Tx2 There&#39;s a lot of resources to do. I used this link. The post used Virtual box and virtual box extension.
 Install OpenPose To use jetson tx2 onboard camera, it is necessary to install opencv3.4. First, I removed prior version of opencv according to this article.
-$ sudo apt-get purge libopencv* $ sudo apt-get purge python-numpy  I used shell script to install opencv 3.</description>
+$ sudo apt-get purge libopencv* $ sudo apt-get purge python-numpy I used shell script to install opencv 3.4 version from this repository.</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@ For the images that are fully-annotated, we have obtained pixel-level segmentati
       <description>While using docker, we ocasionally have to connect to another Docker container such as mysql. In this case, we have to use Docker --network flag.
 Although Docker provided --link flag before 1.9.0 version, this flag is a deprecated legacy feature according to Legacy container links.
 This document shows how to declare Docker network using --network flag.
-$ docker network create tikahost $ docker run -d -p 9998:9998 --name tika --network tikahost logicalspark/docker-tikaserver $ docker run --name daumlab -p 8888:8888 -v &#39;/home/vagrant/Project/daum/scrapy:/home/jovyan/work&#39; -d --network tikahost newsmine:latest  After declaring Docker network, containers can be connected using their Docker name.</description>
+$ docker network create tikahost $ docker run -d -p 9998:9998 --name tika --network tikahost logicalspark/docker-tikaserver $ docker run --name daumlab -p 8888:8888 -v &amp;#39;/home/vagrant/Project/daum/scrapy:/home/jovyan/work&amp;#39; -d --network tikahost newsmine:latest After declaring Docker network, containers can be connected using their Docker name.</description>
     </item>
     
   </channel>

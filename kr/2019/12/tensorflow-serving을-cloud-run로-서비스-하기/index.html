@@ -1,0 +1,157 @@
+<body>
+  <!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="" name="keywords">
+<meta content="TensorFlow Serving을 Cloud Run로 서비스 하기 - Theo&#39;s lab" property="og:title">
+<title>TensorFlow Serving을 Cloud Run로 서비스 하기 | Theo&#39;s lab</title>
+<link rel="stylesheet" href="https://theoseo.github.io/css/style.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+
+  <section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="/kr/"><h1 class="title is-4">Theo&#39;s lab</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          
+          <a class="nav-item" href="/kr/">
+            KR
+          </a>
+          
+          <a class="nav-item" href="/en/">
+            EN
+          </a>
+          
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="subtitle is-6">December 6, 2019</h2>
+      <h1 class="title">TensorFlow Serving을 Cloud Run로 서비스 하기</h1>
+      
+      <div class="tags">
+    
+        <a class="button is-link" href="/kr/tags/development">Development</a>
+    
+        <a class="button is-link" href="/kr/tags/docker">Docker</a>
+    
+        <a class="button is-link" href="/kr/tags/tensorflow">TensorFlow</a>
+    
+        <a class="button is-link" href="/kr/tags/google-cloud">Google Cloud</a>
+    
+</div>
+
+      
+      <div class="content">
+        <p>TensorFlow Serving을 Cloud Run으로 서비스하기 위해 TensorFlow Serving에서 공식적으로 제공하는 <a href="https://github.com/tensorflow/serving/blob/master/tensorflow_serving/tools/docker/Dockerfile">Dockerfile</a>에 대한 수정으로 Cloud Run에 Deploy 가능 하도록 함.</p>
+<p><a href="https://github.com/theoseo/tfserving-cloudrun">예제</a> 및 간단한 설명</p>
+<h3 id="rest-api-용-port-수정">REST API 용 PORT 수정</h3>
+<ul>
+<li>TensorFlow Serving은 REST API와 gRPC로 서비스가 가능하고 각각 8501, 8500 포트를 사용함.</li>
+<li>Cloud Run은 기본적으로 8080 포트로 서비스 되며 사용자가 임의로 바꿀 수 없어 Docker의 환경 변수로 입력 받도록 세팅해야함.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-docker" data-lang="docker"><span style="color:#75715e"># REST</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">EXPOSE</span><span style="color:#e6db74"> ${PORT}</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Create a script that runs the model server so we can use environment variables</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># while also passing in arguments from the docker command line</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> echo <span style="color:#e6db74">&#39;#!/bin/bash \n\n\
+</span><span style="color:#e6db74">tensorflow_model_server --rest_api_port=${PORT} \
+</span><span style="color:#e6db74">--model_name=${MODEL_NAME} --model_base_path=${MODEL_BASE_PATH}/${MODEL_NAME} \
+</span><span style="color:#e6db74">&#34;$@&#34;&#39;</span> &gt; /usr/bin/tf_serving_entrypoint.sh <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h3 id="docker-빌드시-모델-포함">Docker 빌드시 모델 포함</h3>
+<ul>
+<li>Cloud Run은 빌드 후 환경 변수이외의 다른 옵션을 추가할 수 없으므로 모델을 빌드시에 컨테이너에 포함 시켜야함</li>
+<li>Cloud Run은 2GB까지만 메모리와 디스크를 제공함</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-docker" data-lang="docker"><span style="color:#75715e"># The only required piece is the model name in order to differentiate endpoints</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENV</span> MODEL_NAME<span style="color:#f92672">=</span>model_name
+<span style="color:#66d9ef">ADD</span> <span style="color:#e6db74">${</span>MODEL_NAME<span style="color:#e6db74">}</span> <span style="color:#e6db74">${</span>MODEL_BASE_PATH<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>MODEL_NAME<span style="color:#e6db74">}</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h3 id="cloud-run">Cloud Run</h3>
+<p>HTTP 요청으로 호출 가능한 스테이트리스(Stateless) 컨테이너를 실행하는 관리형 컴퓨팅 플랫폼</p>
+<ul>
+<li>서버리스 기반으로 인프라 관리가 필요 없음.</li>
+<li>완전 관리형 또는 GKE의 Google Kubernetes Engine 클러스터 중 선택 가능</li>
+<li>대부분의 서버리스 플랫폼은 클라우드 회사가 지원하는 언어, 라이브러리에 따라 제약이 많음</li>
+<li>HTTP 요청을 수신하는 컨테이너를 배포하는 방식으로 작동해 원하는 언어나 라이브러리로 코딩이 가능.</li>
+<li>서버 프로비저닝, 구성, 관리와 같은 모든 인프라 관리 작업이 필요 없음</li>
+<li>트래픽에 따라 0에서 부터 거의 즉시 자동으로 확장 및 축소됨</li>
+<li>짧게는 100밀리초까지 계산해 사용한 리소스에 대해서만 비용 청구</li>
+<li>Kubernetes를 기반으로 하는 개방형 API 및 런타임 환경인 Knative로 구동</li>
+</ul>
+<h3 id="tensorflow-serving">TensorFlow Serving</h3>
+<ul>
+<li>머신러닝 모델의 실제 서비스 환경을 위해 디자인된 유연한 고성능의 시스템</li>
+<li>동일한 서버 구조와 API를 유지한채 손쉽게 새로운 알고리즘을 배포하고 실험하는 것을 가능하게 함</li>
+<li>Docker를 활용해 Tensorflow 모델과 손쉬운 통합을 제공</li>
+</ul>
+<h4 id="참고-사이트">참고 사이트</h4>
+<ul>
+<li><a href="https://cloud.google.com/run/">Cloud Run</a></li>
+<li><a href="https://cloud.google.com/run/quotas">Cloud Run Quotas</a></li>
+<li><a href="https://www.tensorflow.org/tfx/guide/serving">TensorFlow Serving</a></li>
+<li><a href="https://github.com/tensorflow/serving/blob/master/tensorflow_serving/g3doc/building_with_docker.md">TensorFlow Serving with Docker</a></li>
+</ul>
+
+      </div>
+    </div>
+  </section>
+  
+<section class="section">
+  <div class="container">
+    <aside><div id="disqus_thread"></div></aside>
+    <script type="text/javascript">
+      var disqus_shortname = 'suhongs-kr';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+
+  <section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+  </div>
+</section>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-43044462-6', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</body>

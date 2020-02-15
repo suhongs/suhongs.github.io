@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on Theo&#39;s lab</title>
@@ -17,7 +17,7 @@
       
       <guid>https://theoseo.github.io/en/2019/05/nori-analyzer-and-elk-stack/</guid>
       <description>Recently, Elasticsearch announced its Korean analyzer nori. I test it using docker compose.
-Install Docker CE $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg-agent \ software-properties-common $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - $ sudo add-apt-repository \ &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) \ stable&amp;quot; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.io $ sudo usermod -aG docker $USER  Install Docker Compose $ sudo curl -L &amp;quot;https://github.</description>
+Install Docker CE $ sudo apt-get update $ sudo apt-get install \  apt-transport-https \  ca-certificates \  curl \  gnupg-agent \  software-properties-common $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - $ sudo add-apt-repository \  &amp;#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs)\ stable&amp;#34; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.</description>
     </item>
     
   </channel>

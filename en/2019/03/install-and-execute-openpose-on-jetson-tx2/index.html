@@ -53,47 +53,28 @@
 
       
       <div class="content">
-        
-
-<h3 id="install-jetpack-3-3-on-jetson-tx2">Install Jetpack 3.3 on Jetson Tx2</h3>
-
-<p>There&rsquo;s a lot of resources to do. I used this <a href="https://judo0179.tistory.com/19" target="_blank">link</a>. The post used Virtual box and virtual box extension.</p>
-
+        <h3 id="install-jetpack-33-on-jetson-tx2">Install Jetpack 3.3 on Jetson Tx2</h3>
+<p>There's a lot of resources to do. I used this <a href="https://judo0179.tistory.com/19">link</a>. The post used Virtual box and virtual box extension.</p>
 <h3 id="install-openpose">Install OpenPose</h3>
-
 <p>To use jetson tx2 onboard camera, it is necessary to install opencv3.4.
-First, I removed prior version of opencv according to <a href="https://jkjung-avt.github.io/opencv3-on-tx2/" target="_blank">this article</a>.</p>
-
-<pre><code class="language-bash">$ sudo apt-get purge libopencv*
+First, I removed prior version of opencv according to <a href="https://jkjung-avt.github.io/opencv3-on-tx2/">this article</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get purge libopencv*
 $ sudo apt-get purge python-numpy
-</code></pre>
-
-<p>I used shell script to install opencv 3.4 version from this <a href="https://github.com/jetsonhacks/buildOpenCVTX2" target="_blank">repository</a>.</p>
-
-<pre><code class="language-bash">$ cd buildOpenCVTX2
+</code></pre></div><p>I used shell script to install opencv 3.4 version from this <a href="https://github.com/jetsonhacks/buildOpenCVTX2">repository</a>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd buildOpenCVTX2
 $ ./buildOpenCV.sh
-</code></pre>
-
-<p>After installing opencv 3.4, I installed caffe and openpose using <a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation_jetson_tx2_jetpack3.3.md" target="_blank">shell script</a> from official repository.</p>
-
-<pre><code class="language-bash">$ cd openpose
+</code></pre></div><p>After installing opencv 3.4, I installed caffe and openpose using <a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation_jetson_tx2_jetpack3.3.md">shell script</a> from official repository.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd openpose
 $ ./scripts/ubuntu/install_caffe_and_openpose_JetsonTX2_JetPack3.3.sh
-</code></pre>
-
-<p>To use on board camera, I modified source code and recompile openpose. This is not recommended if you do not have enough knowledge about C++. You are able to check the code from <a href="https://github.com/theoseo/openpose/commit/1ed3bbd6f188372176b1770a01513041c94479f2" target="_blank">this link</a>.</p>
-
+</code></pre></div><p>To use on board camera, I modified source code and recompile openpose. This is not recommended if you do not have enough knowledge about C++. You are able to check the code from <a href="https://github.com/theoseo/openpose/commit/1ed3bbd6f188372176b1770a01513041c94479f2">this link</a>.</p>
 <h3 id="compile-openpose-using-ccmake">Compile OpenPose using ccmake</h3>
-
-<pre><code class="language-bash">$ sudo apt-get install cmake-curses-gui
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get install cmake-curses-gui
 $ mkdir build
 $ cd build
 $ ccmake ..
-$ sudo make install -j`nproc`
-</code></pre>
-
-<h3 id="compile-python-api">Compile Python API</h3>
-
-<p>To compile python API, refer <a href="https://medium.com/pixel-wise/real-time-pose-estimation-in-webcam-using-openpose-python-2-3-opencv-91af0372c31c" target="_blank">this page</a>.</p>
+$ sudo make install -j<span style="color:#e6db74">`</span>nproc<span style="color:#e6db74">`</span>
+</code></pre></div><h3 id="compile-python-api">Compile Python API</h3>
+<p>To compile python API, refer <a href="https://medium.com/pixel-wise/real-time-pose-estimation-in-webcam-using-openpose-python-2-3-opencv-91af0372c31c">this page</a>.</p>
 
       </div>
     </div>
